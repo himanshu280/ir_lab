@@ -87,19 +87,19 @@ for word in unique_words:
 def resolve(w_1=None, w_2=None, operator=None, list_1=None, list_2=None):
     result = []
     # set of functions for finding and
-    if(operator == "and" and list_1 == None and list_2 == None and w_1 != None and w_2 != None):
+    if(operator == "^" and list_1 == None and list_2 == None and w_1 != None and w_2 != None):
         for i in posting_list[w_1]:
             for j in posting_list[w_2]:
                 if(i == j):
                     result.append(i)
         return result
-    if(operator == "and" and list_1 != None and list_2 == None and w_1 != None and w_2 == None):
+    if(operator == "^" and list_1 != None and list_2 == None and w_1 != None and w_2 == None):
         for i in posting_list[w_1]:
             for j in list_1:
                 if(i == j):
                     result.append(i)
         return result
-    if(operator == "and" and list_1 != None and list_2 != None and w_1 == None and w_2 == None):
+    if(operator == "^" and list_1 != None and list_2 != None and w_1 == None and w_2 == None):
         for i in list_1:
             for j in list_2:
                 if(i == j):
@@ -107,19 +107,19 @@ def resolve(w_1=None, w_2=None, operator=None, list_1=None, list_2=None):
         return result
 
     # set of functions for finding or
-    if(operator == "or" and list_1 == None and list_2 == None and w_1 != None and w_2 != None):
+    if(operator == "+" and list_1 == None and list_2 == None and w_1 != None and w_2 != None):
         for i in posting_list[w_1]:
             result.append(i)
         for j in posting_list[w_2]:
             result.append(j)
         return result
-    if(operator == "or" and list_1 != None and list_2 == None and w_1 != None and w_2 == None):
+    if(operator == "+" and list_1 != None and list_2 == None and w_1 != None and w_2 == None):
         for i in posting_list[w_1]:
             result.append(i)
         for j in list_1:
             result.append(j)
         return result
-    if(operator == "or" and list_1 != None and list_2 != None and w_1 == None and w_2 == None):
+    if(operator == "+" and list_1 != None and list_2 != None and w_1 == None and w_2 == None):
         for i in list_1:
             result.append(i)
         for j in list2:
@@ -127,7 +127,7 @@ def resolve(w_1=None, w_2=None, operator=None, list_1=None, list_2=None):
         return result
 
 
-print(resolve(w_1="read", w2="made", operator="and", list1=None, list2=None))
+# print(resolve(w_1="read", w2="made", operator="and", list1=None, list2=None))
 # print(resolve(w1=None,w2=None,operator="and",list1=['1','3'],list2=['1','3','5']))
 # print term_frequency["read"]
 """
