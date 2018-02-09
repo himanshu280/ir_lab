@@ -79,9 +79,57 @@ for word in unique_words:
 			document_frequency[word]+=1
 
 # example 
+#s="read and write"
+def resolve(w1=None,w2=None,operator=None,list1=None,list2=None):
+	result=[]
+	#set of functions for finding and
+	if(operator=="and" and list1==None and list2==None and w1!=None and w2!=None):
+		for i in term_frequency[w1]:
+			for j in term_frequency[w2]:
+				if(i==j):
+					result.append(i)
+		return result
+	if(operator=="and" and list1!=None and list2==None and w1!=None and w2==None):
+		for i in term_frequency[w1]:
+			for j in list1:
+				if(i==j):
+					result.append(i)
+		return result
+	if(operator=="and" and list1!=None and list2!=None and w1==None and w2==None):
+		for i in list1:
+			for j in list2:
+				if(i==j):
+					result.append(i)
+		return result
+	
+	#set of functions for finding or
+	if(operator=="or" and list1==None and list2==None and w1!=None and w2!=None):
+		for i in term_frequency[w1]:
+			result.append(i)
+		for j in term_frequency[w2]:
+			result.append(j)
+		return result
+	if(operator=="or" and list1!=None and list2==None and w1!=None and w2==None):
+		for i in term_frequency[w1]:
+			result.append(i)
+		for j in list1:
+			result.append(j)
+		return result
+	if(operator=="or" and list1!=None and list2!=None and w1==None and w2==None):
+		for i in list1:
+			result.append(i)
+		for j in list2:
+			result.append(j)
+		return result
+
+print(resolve(w1="read",w2="made",operator="and",list1=None,list2=None))
+#print(resolve(w1=None,w2=None,operator="and",list1=['1','3'],list2=['1','3','5']))
+#print term_frequency["read"]
+"""
 print('Document frequency of term "read":')
 print(document_frequency['read'])
 print('Term frequency of term "read":')
 print (term_frequency['read'])
 print('Posting List of term "read":')
 print(posting_list['read'])
+"""
