@@ -77,10 +77,64 @@ for word in unique_words:
     posting_list[word] = []
     for input_file in term_frequency[word].keys():
         if term_frequency[word][input_file] > 0:
-            posting_list[word].append(int(input_file))
+            posting_list[word].append(input_file)
             document_frequency[word] += 1
 
+# example
+#s="read and write"
 
-def generate_posting_list(word):
-    posting_list[word].sort()
-    return posting_list[word]
+
+def resolve(w_1=None, w_2=None, operator=None, list_1=None, list_2=None):
+    result = []
+    # set of functions for finding and
+    if(operator == "and" and list_1 == None and list_2 == None and w_1 != None and w_2 != None):
+        for i in posting_list[w_1]:
+            for j in posting_list[w_2]:
+                if(i == j):
+                    result.append(i)
+        return result
+    if(operator == "and" and list_1 != None and list_2 == None and w_1 != None and w_2 == None):
+        for i in posting_list[w_1]:
+            for j in list_1:
+                if(i == j):
+                    result.append(i)
+        return result
+    if(operator == "and" and list_1 != None and list_2 != None and w_1 == None and w_2 == None):
+        for i in list_1:
+            for j in list_2:
+                if(i == j):
+                    result.append(i)
+        return result
+
+    # set of functions for finding or
+    if(operator == "or" and list_1 == None and list_2 == None and w_1 != None and w_2 != None):
+        for i in posting_list[w_1]:
+            result.append(i)
+        for j in posting_list[w_2]:
+            result.append(j)
+        return result
+    if(operator == "or" and list_1 != None and list_2 == None and w_1 != None and w_2 == None):
+        for i in posting_list[w_1]:
+            result.append(i)
+        for j in list_1:
+            result.append(j)
+        return result
+    if(operator == "or" and list_1 != None and list_2 != None and w_1 == None and w_2 == None):
+        for i in list_1:
+            result.append(i)
+        for j in list2:
+            result.append(j)
+        return result
+
+
+print(resolve(w_1="read", w2="made", operator="and", list1=None, list2=None))
+# print(resolve(w1=None,w2=None,operator="and",list1=['1','3'],list2=['1','3','5']))
+# print term_frequency["read"]
+"""
+print('Document frequency of term "read":')
+print(document_frequency['read'])
+print('Term frequency of term "read":')
+print (term_frequency['read'])
+print('Posting List of term "read":')
+print(posting_list['read'])
+"""

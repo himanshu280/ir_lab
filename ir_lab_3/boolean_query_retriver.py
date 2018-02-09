@@ -1,5 +1,4 @@
 from posting_list_generator import resolve
-# print(generate_posting_list('read'))
 
 pre_order = {
     "^": 1,
@@ -30,9 +29,8 @@ def query_parser(query=None):
                         term_stack.append(
                             resolve(w_1=term_1, w_2=None, operator=operator, list_1=term_1, list_2=None))
                     else:
-                        term_stack.append(
-                            resolve(w_1=term_1, w_2=term_2, operator=operator, list_1=None, list_2=None))
-                operator_stack.append(term)
+                        term_stack.append(resolve(w_1=term_1, w_2=term_2, operator=operator, list_1=None, list_2=None))
+				operator_stack.append(term)
 			else:
 				term_stack.append(term)
 
