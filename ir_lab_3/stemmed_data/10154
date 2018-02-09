@@ -1,0 +1,26 @@
+jun cui 
+subject respond wmlbuttondblclk 
+
+us objectwindow try resond left button 
+doubl click messag wmlbuttondblclk combo box code look like 
+
+class mycombobox public tcombobox 
+
+public 
+mycomboboxptwindowsobject apar int resourceid word atextlen 
+tcomboboxapar resourceid atextlen 
+virtual void wmlbuttondblclkrtmessag msg 
+
+
+void mycomboboxwmlbuttondblclkrtmessage msg 
+
+respond messag select item list box 
+
+
+anyth wrong program help appreciat 
+
+jun 
+talk lord mswindow 
+
+
+

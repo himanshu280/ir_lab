@@ -1,0 +1,558 @@
+chihkeng chen 
+subject control system analysi packagecosypak mathematica 
+
+
+
+announc 
+
+cosypak 
+
+symbolic control system analysi packag 
+
+version 
+
+user fee releas 
+
+
+
+mathematica version higher 
+
+
+
+introduct 
+
+cosypak set packag notebook classic control 
+modern state space control analysi design method 
+notebook cosypak follow typical engin cours 
+taught mani univers around world juniorsenior 
+level undergradu fee us cosypak certain 
+respons expect user see copyright notic 
+readm file includ starter email fax mail post 
+registr form includ readm file 
+
+cosypak avail via 
+
+mishnaesyscwruedu internet 
+
+pub directori 
+
+ps typical ftp session unix given readm file 
+
+
+futur releas 
+
+like receiv updat newer version 
+cosypak pleas send emailfaxmail address 
+addit comment suggest 
+appreciat invalu us will best 
+fix report bug howev fix 
+bug report us 
+know much appreci take 
+minut commun us via email us mail 
+telephon fax will help us releas bugfre 
+version futur comment welcom 
+
+n sreenath 
+system engin depart 
+case school engin 
+case western reserv univers 
+
+
+email 
+
+us mail 
+
+prof n sreenath tel 
+system engg crawford hall fax 
+case western reserv univ 
+cleveland oh 
+
+begin readm file 
+
+
+
+
+user fee releas 
+
+cosypak 
+
+symbolic control system analysi packag 
+
+version 
+
+
+
+mathematica version higher 
+
+
+
+ckchen n sreenath 
+
+system engin 
+case school engin 
+case western reserv univers 
+cleveland oh 
+email 
+
+copyright 
+copyright copyright c k chen n sreenath case 
+western reserv univers 
+
+permiss us copi modifi distribut softwar 
+document purpos without fee herebi grant 
+provid copyright notic appear support 
+document name case western reserv univers 
+case school engin us advertis public 
+pertain distribut softwar without specif without 
+prior permiss case western reserv univers make 
+represent suitabl softwar 
+purpos provid express impli warranti 
+
+acknowledg 
+
+support cwru inform network servic dr rai neff 
+case alumni associ lilli foundat system 
+engin depart case western reserv univers 
+gratefulli acknowledg special thank brian evan georgia tech 
+help 
+
+ftp 
+
+cosypak avail anonym 
+mishnaesyscwruedu internet sampl ftp session 
+given end file 
+
+
+
+chang version updat 
+
+version revis cosypak take advantag 
+robust signal process function avail mathematica 
+sinc mathematica provid better work 
+laplacetransform inverselaplacetransform function 
+mathematica adopt made cosypak 
+smaller thu brian signal process packag support 
+laplacetransform inverselaplacetransform function 
+cosypak longer need directli cosypak 
+power user us signal process still recommend us 
+fine brian evan packag signal process avail 
+anonym ftp site gausseedspgatechedu ip 
+downsid disadvantag updat 
+can mathematica requir runtim resourc 
+previou version 
+
+
+
+mathematica user 
+
+includ laplacetransform packag mathematica 
+directori pleas move file directori 
+calculu directori mathematica packag directori 
+
+
+
+introduct 
+
+unsupport releas cosypak control system 
+analysi packag symbolic control system analysi us 
+mathematica classic control system analysi design method 
+modern control system method implement packag 
+
+packag attend notebook develop 
+next tm comput unix base workstat 
+us supplementari teach aid along standard control 
+engin text ogata phillip harbor 
+undergradu cours engin taught system 
+engin depart cwru addit next 
+also test successfulli appl macintosh comput tm 
+ibm tm runn ms windowstm much interest 
+hear anybodi know us softwar 
+platform mention ibm user howev will 
+evalu notebook first visual graphic 
+
+instal see instruct collect 
+mathematica packag can load user bundl 
+packag mani notebook demonstr 
+function packag notebook follow plan 
+mani fine standard undergradu control engin text book 
+list refer exampl us notebook 
+collect variou refer given end 
+file content notebook directori 
+given 
+
+begin content 
+
+notebook file name 
+chapter introduct control system 
+
+section 
+analyt 
+pole zero 
+signal 
+forward laplac transform 
+invers laplac transform 
+differenti equat zerovalu initi condit 
+differenti equat initi condit 
+
+
+
+notebook file name 
+chapter mathemat model dynamic system 
+
+section 
+od state space 
+linear nonlinear system equat 
+state space transfer function 
+
+
+
+notebook file name 
+chapter transientrespons analysi 
+chapter split three sub notebook file 
+size 
+
+notebook file name 
+
+section 
+time respons analysi 
+first order system 
+second order system 
+third order higher order system 
+
+notebook file name 
+
+section 
+first order system step respons vs time const 
+
+
+notebook file name 
+
+section 
+second order system step respons vs damp ratio 
+
+
+
+
+notebook file name 
+chapter steadystate respons 
+
+section 
+stabil 
+steadystate error analysi 
+
+
+
+notebook file name 
+chapter rootlocu analysi 
+
+
+
+notebook file name 
+chapter frequencyrespons analysi 
+
+section 
+bode plot analysi 
+magnitud vs phase plot nichol plot 
+polar plot 
+nyquist plot 
+combin exampl 
+
+
+
+notebook file name 
+chapter state space method 
+
+section 
+introduct 
+state transit matrix 
+control 
+observ 
+output control 
+pole placement design 
+observ design 
+time respons us state space method 
+
+
+end notebook content 
+
+
+compress file 
+
+file contain complet set cosypak 
+packag notebook mathematica 
+
+compress tar file unix system 
+
+compress sit file macintosh 
+system encod binhex 
+format requir sharewar 
+stuffit file v higher 
+
+zip file ibm pc runn msdo 
+
+expand mathematica file can also us 
+macintosh ibm pc unix system also 
+
+
+instal cosypak 
+
+o unix command line type follow command 
+
+zcat tar xvf 
+
+o macintosh open sithqx file us sharewar 
+stuffit v higher 
+
+o ibm command line type follow command 
+
+pkunzip o d 
+
+note zip file zipp zip util must us 
+pkunzip version higher unzip ibm mai limit 
+directori name charact eight event type o d 
+cosypakzip can also unzip file 
+unix machin unzip util 
+
+
+uncompress untarr unzipp 
+will creat directori call 
+
+file expand see singl directori 
+contain follow three file four 
+subdirectori content 
+
+subdirectori 
+cosypak contain control tool box packag 
+manual cosypak manual ps rtf txt wn format 
+cosynote contain notebook 
+contain laplac transform packag mathematica 
+mathematica user 
+
+file directori 
+
+
+file directori 
+
+
+
+
+
+
+
+
+
+
+file directori 
+laplacetransformm diracdeltam 
+subdirectori common 
+file directori supportm 
+
+import 
+
+notebook exampl filesma file will 
+directori us notebook move directori 
+
+directori mathematica can recogn 
+
+locallibrarymathematicapackag unix machin 
+myharddiskmathematicapackage appl macintosh 
+cwinmathpackag ibm pc 
+
+beginn cell notebook 
+directori list exampl make 
+mathematica identifi directori 
+
+initi path 
+
+exampl unix machin default 
+
+
+
+
+
+exampl appl macintosh 
+
+
+
+
+
+exampl ibm pc 
+
+
+
+
+
+
+chang pathnam accord machin remov 
+mathematica comment sign 
+sett 
+
+command make mathematica recogn directori 
+
+locallibrarymathematicapackag unix machin 
+myharddiskmathematicapackage appl macintosh 
+cwinmathpackag ibm pc 
+
+
+mathematica user 
+
+includ laplacetransform packag mathematica 
+directori pleas move file directori 
+calculu directori mathematica packag directori 
+
+
+gett start 
+
+instal start mathematica open notebook 
+directori notebook load packag 
+navig notebook enjoi ibm user howev will 
+evalu notebook visual graphic 
+
+
+
+user respons 
+
+request take minut fill 
+inform mail us email fax us mail 
+will help us keep abreast improv releas new 
+version cosypak suggest improv welcom 
+
+cut 
+
+name 
+
+organ 
+
+titl 
+
+email 
+
+postal address 
+
+
+
+comment 
+
+suggest 
+
+
+
+
+
+
+cut 
+
+mail inform email fax us mail 
+
+internet 
+
+us mail 
+
+prof n sreenath tel 
+system engg crawford hall fax 
+case western reserv univ 
+cleveland oh 
+
+
+
+report bug 
+
+pleas report bug leav comment address 
+suggest improv critic welcom 
+
+will best fix report bug howev 
+fix bug report us 
+know much appreci take minut 
+commun us via email us mail telephon fax will 
+help us releas bugfre version futur 
+
+
+
+
+disclaim futur releas 
+
+softwar properti case western reserv 
+univers us softwar risk make express 
+impli warranti 
+
+packag notebook can also made run 
+mathematica version lower modif 
+guarante outcom 
+
+
+document 
+
+cosypak function index file 
+directori accord chapter usag illustrat 
+notebook resid directori comput 
+support notebook find macintosh comput acquir mathread 
+public domain notebook reader mathread will least 
+allow perus notebook will abl evalu 
+code fragment 
+
+
+refer 
+
+dorf r c control sixth edit addison 
+weslei new york 
+
+fortmann t e hitz k l introduct linear control 
+marcel dekker 
+
+franklin g f powel d j emaminaeini 
+control dynamic second edit addison weslei new 
+york 
+
+kuo b c control sixth edit prentic hall 
+new jersei 
+
+ogata k control second edit prentic 
+
+hall new jersei 
+
+phillip c l harbor r d control 
+second edit prentic hall new jersei 
+
+
+end readm file 
+
+typical session 
+
+
+ftp mishnaesyscwruedu 
+connect mishna 
+mishna ftp server version next sun nov readi 
+
+name mishnaesyscwruedusre anonym 
+
+password 
+
+ftp cd pub 
+
+ftp binari 
+
+ftp ls 
+port command success 
+open ascii mode data connect file list 
+
+
+index 
+readm 
+placeswmd 
+cosypakuntar 
+transfer complet 
+byte receiv second kbytess 
+
+ftp get 
+port command success 
+open binari mode data connect byte 
+transfer complet 
+local remot 
+byte receiv second kbytess 
+
+ftp quit 
+goodbye 
+
+
+
+

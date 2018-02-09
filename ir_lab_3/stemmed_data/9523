@@ -1,0 +1,295 @@
+robert j niland 
+subject re procomm plu window problem 
+
+kent p iler write 
+
+normal procomm plu do consid bui 
+window versionit got realli great review comput shopper 
+friend connect mainfram unix machin 
+us screen seem problem keep 
+modemh modem mhz machin 
+see troubl keep pcplu do work great 
+
+re high speed modem arriv edit apr 
+
+articl appli window nt 
+do app runn window 
+
+on unadvertis limit current window pc 
+serial com perform serious defici almost 
+everyon purchas highspe modem pep hst 
+discov problem first time try download file accept 
+incom fax upgrad modem overrun retri 
+error abound even activ applic datacomm 
+fax program transfer complet mai take even longer 
+old modem 
+
+
+three reason problem 
+
+univers asynchronou receivertransmitt uart us 
+pc primit devic singlebyt fifo buffer 
+operat systemdriver read flush charact high 
+interrupt rate next incom charact overwrit fifo 
+previou on lost do fairli singlemind 
+environ datacomm can usual keep window 
+
+window operat system overhead plain do 
+interrupt often take longer servic overrun much like 
+do soon report pcmodem vendor 
+lose data mai advis need upgrad 
+like sinc seem conspiraci ignor 
+issu get us advic 
+storefront mailord sourc spoke attempt solv 
+problem never heard term mani even 
+know uart 
+
+even pc uart can upgrad 
+mothercom board add new com board mai still experi 
+error overrun standard microsoft window com driver 
+take full advantag window improv 
+regard still recommend driver upgrad applic 
+like procommwin us get around problem 
+
+
+modem card mai problem modem part 
+card can design awar state uart avoid 
+overrunn howev want bet card design 
+clever will insist uart ever bui modem 
+card modem card even convent uart 
+work standard window driver need simul on 
+us msdex see modem card pretend 
+
+
+hardwar situat 
+
+uart pc com port base nation semiconductor 
+chip megacel insid vlsi chip replac 
+can id uart type system runn microsoft 
+diagnost program windowsmsdex sure run do 
+bring window window serial api mai prevent msd 
+accur identifi run window do prompt 
+
+uart separ transmit receiv fifo 
+configur trigger level can run reliabl clock rate 
+bp although current modem technolog point 
+push luck go bp short access 
+cycle time also dma capabl 
+clear pc driver ever us technic info 
+see nation semiconductor applic note 
+
+uart compon 
+
+try locat uart mother board multifunct io card com 
+board isamca modem card find socket compon 
+number com port probabl buri vlsi 
+abl perform chip replac can disabl 
+vlsi com port chose can least add aftermarket 
+com board 
+
+on socket chip can bui plugin 
+low power cmo version ic sever 
+supplier typicalli chip normal 
+dualinlin packag style avail avoid 
+chip without presum ok 
+
+earli ns chip bug although nation will reportedli exchang 
+manufactur free clone chip avail variou 
+ic maker nation manual turbocom driver state 
+support follow appar equival chip 
+nation semiconductor 
+chipstechnolog 
+texa instrument 
+silicon system 
+vlsi 
+turbocom warn western digit 
+sai problem report earli ibm 
+system ibm reportedli will upgrad 
+
+socket chip need bui 
+market com multifunct board modem card situat 
+mai hose add new com multifunct card need 
+either disabl port replac reassign 
+although watch irq conflict without turbocom 
+
+although cheaper card avail interest gett 
+problem solv quickli elect bui modular circuit technolog 
+mctaio card 
+
+jdr microdevic 
+samaritan drive 
+san jose ca 
+voic us 
+voic 
+fax us 
+
+mctaio import sell 
+isa card provid 
+
+port type connector address irq comment 
+com com irq socket 
+com ribbon com irq socket 
+parallel irq 
+game ribbon 
+
+kit includ ribbon cabl connector secondari com 
+port ribbon cableconnector game port two bulkhead plate 
+ribbonbas connector adaptor cabl port can 
+individu disabl com port tx rx rt ct dtr 
+dcd dsr jumper 
+
+jdr also sell superio mf card also id 
+
+heard sever peopl less expens mf io card 
+
+
+tsd system 
+
+card plu per 
+
+greenfield trade distributor 
+voic 
+card wone sell 
+
+rs data system inc 
+east highwai 
+longwood fl 
+phone 
+fax 
+card 
+
+person experi firm except jdr 
+
+meanwhil back mct card jdr need two serial port 
+runn irq pc disabl builtin vlsibas 
+port howev turbocom driver set 
+intern us irq share 
+
+
+softwar situat 
+
+simpli upgrad uart will complet solv common overrun 
+problem standard ms serial driver take full advantag 
+window driver even less capabl window 
+driver follow limit 
+enabl receiv fifo rate bp 
+never enabl transmit fifo result interrupt 
+rate upload 
+set trigger level byte high easi 
+byte arriv driver can read fifo 
+port menu control panel allow speed 
+modem spars data text can easili compress 
+suggest host dte connect rate bp 
+effect 
+api accept rate 
+api let do program know even 
+do program get littl benefit 
+port standard driver 
+allow irq share 
+bio initi properli mani system 
+window provid workaround app provid port 
+speed option bp 
+
+problem reportedli solv window nt do mai 
+mai address window releas 
+rumor suggest solv window 
+
+can get replac driver solv problem bui 
+copi current version 
+
+bioengin research 
+pacif commwar divis 
+beacon hill lane 
+ashland 
+voic 
+fax 
+bb 
+mcimail 
+compuserv 
+
+price around recal bioeng set accept credit 
+card send check egghead list turbocom 
+far know stock bio softwar compani 
+per se appar need reliabl hispe serial connect 
+inhous instrument applic wrote driver discov 
+market revis gener purpos com driver suit 
+recent upgrad window runtim licens 
+
+now host dte connect rate set bp 
+datacomm app zero problem download routin 
+see transfer rate exce bp also us bp 
+link pc lossless bidirect io 
+upload variou remot system anoth matter mani host 
+still us antiqu uart driver 
+
+note still highest rate window port menu 
+control panel will allow configur com port turbocom get 
+around allow specifi port factor will 
+set real uart rate multipl rate pass 
+window api dialog box 
+
+also ctsrt hardwar flow control enabl suggest 
+even ever transfer ascii data xonxoff 
+suffici reliabl method flow control inform dec 
+standard xonxoff hysteresi sender mai transmit anoth 
+ye sixteen byte receipt xoff receiv 
+system devic byte fifo clearli big enough 
+let us reli exclus xonxoff wellrespect datacomm 
+engin inform realli ctsrt 
+doswindow environ us data rate 
+mai still riski 
+
+even hardwar flow control turbocom can still 
+experi overrun busi system lot app runn 
+seriou swapp progress situat mai need 
+bui coprocess com board will cost 
+upgrad review two board review 
+turbocom can found issu magazin 
+suggest try upgrad first experi 
+process prioriti time slice whose 
+thrash system still run comm problem 
+
+
+close soapbox comment 
+
+state serial datacomm support embarrass across 
+comput industri oldest standard io interfac 
+job design hardwar write softwar often seem 
+assign least senior lowest rank engin comput 
+compani design averag serial port least ten year 
+behind state art last job major workstat 
+vendor lobbi improv serial port 
+initi design new system famili machin 
+subsequ introduc port howev 
+except comput compani seem champion decent 
+io 
+
+mai well learn can serial io 
+situat show sign improv soon vfast arriv expect 
+cri outrag window user worldwid whose pc 
+work todai will fail miser vfast without 
+hardwarebuff uart like without softwar driver 
+us uart best advantag vfast modem will wast monei 
+
+regard east harmoni road 
+bob niland suit 
+internet fort collin co 
+compuserv 
+
+copyright robert j niland 
+right reserv 
+
+permiss grant automat redistribut articl via 
+electron magnet optic media unedit form 
+usenet newsgroup articl post author permiss 
+grant compuserv usenet reader subscrib 
+person receiv articl compuserv ftp site authoriz 
+author via electron mail author retain on 
+electron copi make hardcopi reproduct edit 
+articl person noncommerci us provid materi 
+chang made articl copyright statement 
+copi storag reproduct redistribut articl 
+form prohibit without express written consent 
+author robert j niland 
+
+eof 

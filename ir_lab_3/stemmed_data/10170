@@ -1,0 +1,511 @@
+ito takayuki 
+subject re bmp format mean 
+
+articl 
+andrew l robert write 
+
+exactli window bitmap format look like mean 
+data store width height colour bitmap data 
+find anyth th user manual refer materi 
+give inform 
+
+thoma kinsman 
+newsgroup composmswindowsprogrammermiscaltbinariespicturesutil 
+subject dibbmp creation guid request 
+keyword dib bmp bitmap file format 
+messageid 
+date dec gmt 
+sender 
+organ precambiran electron rochest ny 
+line 
+xref cradletitech 
+
+
+
+
+
+
+
+
+guid creation dib imag 
+
+
+thoma b kinsman 
+
+precambrian electron 
+falstaff rd 
+rochest ny 
+
+copyright march 
+
+
+
+abstract 
+
+format imag creat us ms window 
+applic document ms window 
+refer guid guid intend clearifi 
+word specif put forth 
+recommend among variou altern 
+
+pleas send updatescorrectionssuggest revis 
+pleas thank write time 
+keep name document thank 
+respect 
+
+document copyright thoma b kinsman 
+desir postscript version document 
+avail 
+
+inform free get pai 
+sue wrong 
+
+
+overview 
+
+dib imag file format intend independ 
+file format microsoft mean unclear 
+four pixel resolut support bit bit bit bit 
+pixel 
+
+imag intend us do ibm littleendian system 
+creat anoth architectur will byte 
+swap short long integ valu 
+
+convent dib imag end extens 
+
+
+
+march 
+
+
+
+
+
+
+
+
+superset earlier imag consequ 
+will sometim hear dib file referr file 
+
+sinc dib imag file superset three dib 
+imag 
+o do dib imag recommend convent 
+form will describ creat intend 
+applic runn ms window do environ 
+o dib imag understand flavor 
+dib imag us present manag 
+o oldstyle bitmap imag 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+march 
+
+
+
+
+
+
+
+
+differ flavor 
+
+do dib imag consist 
+file header identifi file 
+dib file header also give total size imag 
+file offset imag data 
+imag header specifi imag 
+attribut 
+option palett color us imag exist 
+mai contain entri entri window 
+rgbquad structur 
+imag data 
+
+
+dib imag consist 
+file header identifi file 
+dib file header also give total size 
+imag file offset imag data 
+imag header specifi imag 
+attribut 
+option palett color us imag 
+exist mai contain entri entri 
+window rgbtripl structur 
+imag data 
+
+
+old style imag bitmap consist 
+either bitmapinfohead bitmapcorehead header 
+type determin first long integ dword valu 
+option color palett palett mai compos 
+either window rgbquad structur header 
+bitmapinfohead window rgbtripl structur header 
+bitmapcorehead 
+imag data 
+
+
+creat dib imag file 
+
+creat do dib imag file consist sever straight forward step 
+header need creat written file header 
+structur defin ms includ file 
+palett inform need store imag 
+imag five gener step 
+fill bitmapfilehead bitmapinfohead 
+structur basic imag inform 
+imag imag creat 
+color palett rgbquad 
+calculat total file size putt inform 
+
+
+
+march 
+
+
+
+
+
+
+
+
+field bitmapfilehead 
+calculat offset imag data start 
+file putt field 
+bitmapfilehead 
+write file bitmapfilehead bitmapinfohead 
+color palett imag data order 
+
+follow section describ structur term microsoft c type 
+defin keyword follow tabl describ keyword 
+familiar microsoft c 
+
+
+
+typedefin keyword microsoft c 
+
+typedef mean 
+
+byte unsign charact 
+word two byte unsign integ 
+dword four byte unsign integ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+march 
+
+
+
+
+
+
+
+
+bitmapfilehead 
+
+structur defin 
+typedef struct tagbitmapfilehead 
+word 
+dword 
+word 
+word 
+dword 
+
+
+field two ascii charact serv 
+identifi file dib imag file intel byte order 
+machin ibm compat constant can form c 
+quantiti intel system 
+
+field total size file purpos 
+field equal size bitmapfilehead plu size 
+bitmapinfohead plu number entri color palett time 
+size rgbquad plu number byte imag data 
+imag data written uncompress form valu can 
+calculat ahead time otherwis field need fill 
+later 
+
+field alwai set 
+zero 
+
+field set offset start imag data 
+start file purpos field set 
+size bitmapfilehead plu size 
+bitmapinfohead plu number entri color palett time 
+size rgbquad work imag data written 
+write color palett on exist 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+march 
+
+
+
+
+
+
+
+
+bitmapinfohead 
+
+structur defin 
+typedef struct 
+dword 
+dword 
+dword 
+word 
+word 
+dword 
+dword 
+dword 
+dword 
+dword 
+dword 
+
+
+field set size bitmapinfohead structur 
+read imag file valu us 
+determin imag contain bitmapinfohead 
+bitmapcorehead 
+
+field width imag imag pixel 
+
+field height imag imag line 
+
+field alwai set data written 
+on color plane 
+
+field bitdepth imag must either 
+depend bitdepth imag data 
+
+field tell imag data compress 
+compress dib imag support two form runlength encod 
+howev never seen imag us know yet 
+work set field zero long zero indic 
+data compress 
+
+subsequ field bitmapinfohead structur mai set 
+zero requir interprett softwar abl 
+comput field necessari previou inform 
+
+field might want explicitli specifi might 
+imag field indic 
+possibl color entri us imag contain 
+color us color imag mai 
+want save possibl palett entri gener set 
+field zero 
+
+
+
+march 
+
+
+
+
+
+
+
+
+color palett 
+
+entri color palett rgbquad structur rgbquad 
+structur defin includ file 
+typedef struct tagrgbquad 
+byte 
+byte 
+byte 
+byte 
+
+field alwai zero color us amount 
+blue green red fill structur structur 
+written file valu zero 
+field indic particular compon 
+contribut color composit valu 
+field indic compon contribut fulli color 
+composit 
+
+
+
+imag data 
+
+three surpris order imag data dib imag 
+file creator format determin creativ 
+certainli 
+
+within imag data line written padd next four 
+byte quantiti imag on pixel 
+wide still write four byte everi imag line 
+number byte per line can calculat 
+
+bytesperline widthinpix bitdepth 
+
+term field bitmapinfohead structur 
+
+bytesperline biwidth bibitcount 
+
+
+write imag data must write bottom line first 
+bottom line imag look screen 
+first line imag data file 
+
+imag inform written 
+expect on bit imag padd eight pixel byte four bit 
+imag padd two pixel byte eight bit imag written on 
+pixel per byte twentyfour bit imag written three byte per pixel 
+howev imag inform must written 
+order blue green red imag file format write data 
+
+
+
+march 
+
+
+
+
+
+
+
+
+order dib imag file write data 
+order 
+
+summari 
+
+provid enough inform creat dib imag 
+applic scanner imag export routin 
+find dib imag pleas pass inform 
+can modifi document accordingli 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+march 
+
+
+
+thoma b kinsman rochest ny 
+random kind senseless act anon 
+
+
+ito takayuki 
+senior depart infom scienc 
+faculti scienc univers tokyo japan 
