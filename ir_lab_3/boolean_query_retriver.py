@@ -17,7 +17,7 @@ def query_parser(query=None):
         term_stack = []
         for term in term_list:
             if term == "^" or term == "+" or term == "!":
-                while(len(operator_stack[-1]) != 0 and pre_order[operator_stack[-1]] > pre_order[term]):
+                while(len(operator_stack) != 0 and pre_order[operator_stack[-1]] > pre_order[term]):
                     term_1 = term_stack.pop()
                     term_2 = term_stack.pop()
                     operator = operator_stack.pop()

@@ -125,40 +125,24 @@ def resolve(w_1=None, w_2=None, operator=None, list_1=None, list_2=None):
         for j in list2:
             result.append(j)
         return result
-        
-    #set of functions for finding not
-    if(operator == "!" and w_1!=None and list_1==None and list_2==None and w_2==None):
-    	for i in documents:
-    		flag=0
-    		for j in posting_list[w_1]:
-    			if(i==j):
-    				flag=1
-    		if(flag==0):
-   				result.append(i)
-    	return result
-    
-    if(operator == "!" and w_1==None and list_1!=None and list_2==None and w_2==None):
-    	for i in documents:
-    		flag=0
-    		for j in list_1:
-    			if(i==j):
-    				flag=1
-    		if(flag==0):
-   				result.append(i)
-    	return result
-    
 
-#print(posting_list["read"])
-#print(documents,"----------------------------------------")
-print(resolve(w_1="read", w_2=None, operator="!", list_1=None, list_2=None))
-# print(resolve(w1="read", w2="made", operator="and", list1=None, list2=None))
-# print(resolve(w1=None,w2=None,operator="and",list1=['1','3'],list2=['1','3','5']))
-# print term_frequency["read"]
-"""
-print('Document frequency of term "read":')
-print(document_frequency['read'])
-print('Term frequency of term "read":')
-print (term_frequency['read'])
-print('Posting List of term "read":')
-print(posting_list['read'])
-"""
+    # set of functions for finding not
+    if(operator == "!" and w_1 != None and list_1 == None and list_2 == None and w_2 == None):
+        for i in documents:
+            flag = 0
+            for j in posting_list[w_1]:
+                if(i == j):
+                    flag = 1
+            if(flag == 0):
+                result.append(i)
+        return result
+
+    if(operator == "!" and w_1 == None and list_1 != None and list_2 == None and w_2 == None):
+        for i in documents:
+            flag = 0
+            for j in list_1:
+                if(i == j):
+                    flag = 1
+            if(flag == 0):
+                result.append(i)
+        return result
