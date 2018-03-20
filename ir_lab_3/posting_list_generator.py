@@ -80,9 +80,6 @@ for word in unique_words:
             posting_list[word].append(input_file)
             document_frequency[word] += 1
 
-# example
-#s="read and write"
-
 
 def resolve(w_1=None, w_2=None, operator=None, list_1=None, list_2=None):
     result = []
