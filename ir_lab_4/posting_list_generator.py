@@ -124,12 +124,52 @@ for key in doc_term_vector:
     doc_term_vector[ key ] = vector
     
 # printing data
-for key in doc_term_vector:
-    print('\n')
-    print(key + " : ")
-    print( doc_term_vector[key] )
-    print('\n')
+# for key in doc_term_vector:
+#     print('\n')
+#     print(key + " : ")
+#     print( doc_term_vector[key] )
+#     print('\n')
 # pp.pprint( doc_term_vector )
+
+# query processing 
+def process_query( query ):
+    q_temp = ""
+
+    # cleaning data by removing punctuation marks
+    for characters in query:
+        if characters not in punctuation_marks:
+            q_temp += characters
+
+    # stemming and removal of stop words
+    words = q_temp.split()
+    print( words )
+    
+    processed = []
+
+    for word in words:
+        word = word.lower()
+        if word.isalpha() == False:
+            continue
+        if word not in stop_word:
+            processed.append(porter.stem(word))
+
+    print( processed )
+
+    query_vector = [0] * len(unique_words)
+
+    for word in processed:
+        if word in unique_words:
+            query_vector[ term_index[word] ] = 1
+        else:
+            continue
+    
+    print( query_vector)
+
+    return query_vector
+
+
+query_vector = process_query("subject call present navi")
+
 
 
 # def resolve(w_1=None, w_2=None, operator=None, list_1=None, list_2=None):
