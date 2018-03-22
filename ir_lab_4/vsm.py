@@ -2,7 +2,10 @@ import os
 import re
 import porter
 import math
+import operator
 import pprint
+from collections import OrderedDict
+from operator import itemgetter
 
 pp = pprint.PrettyPrinter( indent = 4 )
 
@@ -123,14 +126,16 @@ for key in doc_term_vector:
         vector[ term_index[term] ] =  vector[ term_index[term]] * document_frequency[ term ] / d_length
     doc_term_vector[ key ] = vector
     
-# printing data
-# for key in doc_term_vector:
-#     print('\n')
-#     print(key + " : ")
-#     print( doc_term_vector[key] )
-#     print('\n')
-# pp.pprint( doc_term_vector )
-
+#printing data
+"""
+for key in doc_term_vector:
+    print('\n')
+    print(key + " : ")
+    print( doc_term_vector[key] )
+    print('\n')
+    print(len(doc_term_vector[key]))
+pp.pprint( doc_term_vector )
+"""
 # query processing 
 def process_query( query ):
     q_temp = ""
@@ -163,12 +168,69 @@ def process_query( query ):
         else:
             continue
     
-    print( query_vector)
+    #print( len(query_vector))
 
     return query_vector
 
 
 query_vector = process_query("subject call present navi")
+"""
+print(len(doc_term_vector))
+it=1
+for i in doc_term_vector:
+	print(i," ",type(i),":",len(doc_term_vector[i]))
+	it=it+1
+"""
+#print(doc_term_vector["1"])
+#print(doc_term_vector["9985"])
+def similarity(query,document):
+	sim=0.0
+	for i in range(len(query)):
+		sim=sim+query[i]*document[i]
+	return sim
+sim=dict()
+for i in doc_term_vector:
+	sim[i]=similarity(query_vector,doc_term_vector[i])
+#sim=sorted(sim)
+#print(sim)
+#sim -> doc:sim with query
+
+
+
+
+
+#when equal similarity documents are not listed and any one of them is listed for a rank
+"""
+inverted_sim={}
+for i in sim:
+	inverted_sim[sim[i]]=i
+
+#print(inverted_sim)
+it=0
+for key in sorted(inverted_sim.keys()):
+	it=it+1
+	print("Rank",it,">>>",inverted_sim[key])
+"""
+
+
+
+
+
+#when all documents with equal similarity/rank are listed
+l={}
+for i in sim:
+	try:
+		l[sim[i]].append(i)
+	except KeyError:
+		l[sim[i]]=[]
+		l[sim[i]].append(i)
+it=0
+for key in sorted(l.keys()):
+	it=it+1
+	print("Rank",it,">>>",l[key])
+
+
+
 
 
 
