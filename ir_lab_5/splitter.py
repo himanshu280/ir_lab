@@ -36,7 +36,11 @@ for line in fh:
 	else:
 		qrel[qId][doc] = relInfo
 
+# get number of relevant docs
+rel_docs = dict()
 
-print( model_out['301'] )
-print()
-print( qrel['301'] )
+for qId in qrel.keys():
+	rel_docs[qId] = 0
+	for docId in qrel[qId]:
+		if qrel[qId][docId] == '1':
+			rel_docs[qId] += 1
