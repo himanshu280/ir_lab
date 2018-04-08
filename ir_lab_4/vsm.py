@@ -188,6 +188,7 @@ def similarity(query,document):
 	for i in range(len(query)):
 		sim=sim+query[i]*document[i]
 	return sim
+    
 sim=dict()
 for i in doc_term_vector:
 	sim[i]=similarity(query_vector,doc_term_vector[i])
