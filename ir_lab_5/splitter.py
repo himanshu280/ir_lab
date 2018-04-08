@@ -8,7 +8,7 @@ for line in fh:
 	result = line.split()
 	qId = result[0]
 	doc = result[2]
-	rank = result[3]
+	rank = int(result[3])
 	score = result[4]
 
 	if qId not in model_out.keys():
@@ -19,7 +19,7 @@ fh.close()
 
 # sort according to ranking
 for key in model_out.keys():
-	model_out[key].sort(key=operator.itemgetter(2),reverse=True)
+	model_out[key].sort(key=operator.itemgetter(1),reverse=False)
 
 # reading qrel file
 qrel = dict()
