@@ -130,16 +130,21 @@ for key in doc_term_vector:
 
 def eu_dist(p_A, p_B):
     # p_A is point A which is a vector
-    dst = distance.euclidean(p_A,p_B)
+    dst = distance.euclidean(p_A, p_B)
     return dst
 
-#l_p is list of points
+# l_p is list of points
+
+
 def find_centroid(l_p):
     num_points = len(l_p)
-    sum_points=[]
+    sum_points = [0] * len(unique_words)
     for doc_id in l_p:
-        sum_points=[sum(x) for x in zip(sum_points,doc_term_vector[doc_id])]
-    centroid_of_points=sum_points/num_points
+        sum_points = [sum(x) for x in zip(sum_points, doc_term_vector[doc_id])]
+    centroid_of_points = []
+    for x in sum_points:
+        centroid_of_points.append(1.0 * x / num_points)
+    print centroid_of_points
     return centroid_of_points
 
 
@@ -148,16 +153,17 @@ def find_label(doc_vec, centroid_list):
     # centroid list is the list of all vectors of all centroids
     # use eu_dist from above
     # return the index of the centroid it is closet to
-    min_dist=float("inf")
-    resulting_centroid=doc_vec
+    min_dist = float("inf")
+    resulting_centroid = doc_vec
     for i in range(len(centroid_list)):
-    	if(eu_dist(centroid_list[i],doc_vec)<min_dist) resulting_centroid=centroid_list[i]
+        if eu_dist(centroid_list[i], doc_vec) < min_dist:
+            resulting_centroid = centroid_list[i]
     return resulting_centroid
-   #returning the centroid vector closest to the document rather than the index of the document
+
 
 def check_condition(bins_1, bins_2):
-	return bins_1==bins_2
-	#check if this function is working
+    return bins_1 == bins_2
+    # check if this function is working
 
 
 # parameter initilization
@@ -189,6 +195,7 @@ for iter_count in range(iters):
     for num_bin in bins_1:
         centroids.append(find_centroid(num_bin))
         break
+    break
 
     # # lable each data point using min_dist(cluster_set,single_point)
     # for doc_id in set_of_docs:
