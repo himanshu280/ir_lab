@@ -1,0 +1,29 @@
+from mike lipsi mpu 
+subject re perman swap file 
+
+in articl martin linsenbigl write 
+
+when i first setup window us the self load mode it grabb about 
+meg of swap file space my meg hd wa nearli empti at that time 
+i delet window for a time and recent reload now my hd is nearli full 
+and window just took meg 
+
+on of the rule for a perman swap file is that it must be contigu 
+nonfrag space i suspect that is more respons for the 
+differ than the amount of free disk in your case 
+
+i have read somewher that the best rule of thumb is have your 
+perman swap file the same size as your regular ram size i have meg 
+of ram and window took meg perm swap file work veri well 
+in fact with my avail hd space about meg it let me make 
+the swap file ani bigger 
+you should chang your virtual mem swap file to meg i think 
+that is what you said your ram wa 
+
+it depend on what you ar runn we had to increas our swap 
+file i think it is now when some applic 
+run without everyth els close 
+
+
+mike lipsi work 
+mitsubishi electron research laboratori home 

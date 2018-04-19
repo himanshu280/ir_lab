@@ -1,0 +1,471 @@
+from ashok aiyar 
+subject sett up a slip client under do and window long 
+
+
+i have been post monthli a slip client on a post for a 
+few month lot of work and immin graduat have come in the wai of 
+post on of these for march or earlier thi month for which i apolog 
+
+thi file includ inform on write a script for univers of minnesota 
+phone and also a batch file hack that let you us other packet driver with 
+phone 
+
+for addit modif and correct i can be reach at 
+
+
+best wish 
+ashok 
+
+begin sliptxt 
+base on my experi on sett up slip under do and window here 
+ar my comment on sett up slip in thi environ i thank the 
+trumpet beta tester and the cwru slip beta tester for their comment 
+
+
+configur your modem 
+
+a turn off dtr 
+i have to disabl dtr becaus the commun program that i us 
+to dial my slip server qmodem drop dtr when i exit the program 
+and therefor hang up the line if you us a program like kermit 
+or conex to establish the slip connect then thi need not be done 
+these program do not necessarili hangup the line when you exit 
+
+note if you us univ of minn phone to dial and establish a 
+slip connect you do not need to turn off dtr 
+
+b dial and establish the slip connect first thi can be done 
+automat if you us a program like phone from the univers of 
+minnesota which will dial and establish a slip connect then load the 
+slip packet driver the phone script languag is simpl and 
+phone script can be easili written to configur phone to work with 
+other slip server in addit while the onli packet driver 
+that phone work with is umslip current it is easi to write a 
+batch file hack that let phone work with other packet driver 
+there is a section on phone in the document with both script and 
+batch file exampl 
+
+
+configur the slip driver 
+
+there ar five slip packet driver commonli avail 
+cslipperex peter compress slip driver 
+slipperex peter slip driver 
+crynwr driver i like phil modifi driver 
+etherslcom crynwr driver ethernet simul over slip 
+umslipcom univ of minnesota driver base on 
+
+of these four i vastli prefer cslipperex over or 
+etherslcom for the follow reason 
+
+a it is much faster even though my modem ha just a uart 
+b while us myself and sever other 
+have notic that the pc clock get mess up after perform a 
+long ftp transfer 
+c it support pktmux when us in ethernet simul mode 
+d when us in ethernet simul mode cslipper seem to work with 
+everi tcpip applic that i have test it with 
+
+instruct for cslipperex and you do not us phone 
+a load slipper in your autoexecbat file accord to instruct 
+for instanc if you have a modem on 
+slipper 
+b if you us do tcpip applic in win do box then us the 
+doubleend packet driver shim winpktcom thi creat a virtual 
+packet driver at do applic in nativ mode do 
+applic in window do box and window applic can all 
+us thi virtual driver at 
+winpktcom 
+c if you us qvtnet load pktintcom next qvtnet is configur in 
+qvtnetini to us the interrupt at 
+pktintcom 
+
+instruct for 
+a try gett a version slip driver philip burn of northwestern 
+univers ha a modifi driver that is better at hardwar 
+handshak thi driver is distribut along with nupop 
+b load the driver after establish the slip connect my modem is a 
+modem on so here is how i would load the driver 
+w h slip 
+c as discuss abov if you us do tcpip applic in window 
+do box you probabl want to us winpktcom 
+winpktcom 
+d if you us winqvtnet load pktintcom 
+pktintcom 
+
+instruct for etherslcom 
+if you choos to us etherslcom instead of the 
+instruct ar exactli the same with on crucial differ you 
+will have to delet the line from the section 
+of systemini thi will interfer with runn regular window comm 
+applic such as crosstalk and you will get lot of dropp 
+charact etc in these applic thi is therefor not 
+recommend etherslip would be load as 
+ethersl w h 
+
+configur window 
+
+a make the follow modif to the systemini file 
+section 
+i list all your com port with their address and interrupt 
+
+
+
+
+
+
+thi can also be done from within window control panel 
+but doubleclick on the icon 
+ii give the port to which your modem is attach a gener com buffer 
+
+iii chang the com port autoassign valu for the com port that you wish 
+to us for your modem to zero thi is the amount of time that 
+window wait in second befor hand control of that com port to 
+anoth applic if you us winqvtnet and then want to switch 
+from on session to anoth and thi valu is at the default valu 
+of second you ar will get a gpf and window will crash 
+
+thi can also be done from within window control panel 
+doubleclick on enhanc and under set 
+the devic content for the com port your modem is on to 
+
+
+addit note 
+
+what to do if you ar assign a differ ip address for each 
+slip session 
+
+i am fortun in that our campu slip server assign each user 
+a perman ip address so i do not have worri about edit qvtnetini 
+each time that i establish a slip connect 
+
+if you ar assign a new ip address on everi occas that you dial in 
+pleas try to us bootp awar softwar and let bootp do the 
+configur for you howev qvtnet is not bootp awar and rarp 
+will not work over a slip connect to get qvtnet work in a 
+situat such as thi you must do the follow 
+
+edit the qvtnetini file let the section look like thi 
+
+
+
+
+or whatev is appropri for you 
+
+or whatev is appropri 
+
+save the chang and then writeprotect thi file 
+r 
+
+start your slip connect and rememb the name and ip address 
+that you ar assign each time you start qvtnet the 
+gener configur dialog box will open enter the name and 
+ip address and you were assign for that session click on 
+and you should be up and runn the chang you make will not 
+be save as qvtnetini is writeprotect 
+
+a more eleg solut to the problem of dynamic slip ip address 
+assign is provid by victor menayang 
+victor us the program bootpq to semiautom qvtnet prepar 
+bootpq is us to inquir the assign ip which is then save to a 
+file call anoth file is essenti a complet 
+qvtnetini file that lack the ip address in the final step 
+and ar copi into a singl qvtnetini file an exampl of 
+batch file is provid below 
+
+slipper 
+pktintcom 
+bootpq i myip 
+bootpq i ip is 
+copi q net myip noip ecomqvtnetqvtnetini 
+del q myip 
+off 
+echo 
+echo readi to run winqvtnet 
+
+for question and more detail about bootpq pleas contact victor 
+menayang 
+
+qpc softwar is attempt to add bootp capabl to winqvtnet 
+
+how do you us pktmux over slip 
+
+pktmux will not work over the packet driver and crash 
+immedi if us with etherslcom 
+
+pktmux will work with cslipperex when cslipper is us in ethernet 
+simul mode an exampl of thi configur is shown below 
+
+the latest releas of pktmux is and it is import that you 
+us thi version if you want to us virtual packet driver with 
+applic like trumpet for window to be releas veri shortli 
+
+
+
+lh cslipper ether packet driver 
+lh pktmux pktmux load for virtual packet driver 
+lh pktdrv first virtual packet driver us for qvtnet 
+lh pktintcom qvtnet pktintcom 
+pktdrv pktdrv for us in nativ do or wintrumpet 
+
+addit virtual packet driver can be load directli from within 
+window do box for exampl my pif file to load popmail is 
+direct to the file thi is what popmailbat read 
+like 
+
+pktdrv load a virtual packet driver at 
+cd popmail 
+popmail 
+cd 
+pktdrv u unload the packet driver at 
+exit caus the do window to close 
+
+i have similar batch file that load other do tcpip applic 
+like pc gopher it is my experi that pktmux work fine 
+even if the virtual packet driver in two independ virtual do 
+session ar load at the same softwar interrupt for exampl 
+within two differ do box on for popmail and the other for 
+gopher the virtual packet driver pktdrv is load at in each 
+instanc 
+
+how much doe pktmux degrad the perform of cslipper 
+
+i have a modem in a runn window with 
+a reason fast video card ati graphic ultra under these 
+condit when i have three virtual packet driver load and 
+be us as follow 
+a driver at qvtnet ftp client session 
+b driver at in on do window cutcp session 
+c driver at in anoth do window trumpet for do 
+
+i get ftp transfer rate of kbsec while transferr 
+compress file thi rate is compar to that which i get with 
+load as a packet driver and where a singl tcpip session 
+is activ if cslipper is us a packet driver and a singl session 
+is activ i get transfer rate of kbsec on the same 
+file 
+
+while there is about degrad in the perform of slipper 
+for me the benefit of be abl to us pktmux outweigh the 
+perform hit 
+
+cslipper and ethernet simul mode 
+
+in ethernet simul mode cslipper ver work with all the 
+applic that i have test it with on or two applic 
+that requir ethernet simul balk at cslipper but even 
+these rare problem have been resolv with ver 
+
+when slipper is us in ethernet simul mode and us with pktmux 
+i get some an error messag in the qvtnet consol window that read 
+packet or version thi doe not 
+seem to prevent qvtnet from function although i cannot comment on 
+loss of perform 
+
+what can you do if your do tcpip applic doe not work with 
+cslipper in ethernet simul mode 
+
+in the rare event that you find a packag that doe not work with 
+cslipper in ethernet simul mode first contact the author 
+peter tattam and let him 
+know chanc ar that he can fix it 
+
+in the meanwhil you can try the follow i do not know if it is 
+kosher but it work when i had problem with cslipper ver 
+
+cslipper is load at as describ abov under the pktmux section 
+
+i load etherslcom at run the applic and then termin 
+etherslcom 
+
+thi also work within window virtual do box howev a 
+packet driver like ethersl can be us in onli on virtual do box 
+at a time 
+
+so for exampl here is my batch file to run grate med a 
+medic refer retriev program develop at the nation librari 
+of medicin 
+
+ethersl w h load etherslip 
+cd 
+search 
+cd 
+termin termin etherslip 
+exit close the do box and return me to window 
+
+if you us thi method be cautiou about on thing have 
+ani activ pktmux do session open at the same time after close 
+the ethersl window you can run your pktmux do session with no 
+problem btw the exampl abov grate med work with no 
+problem with cslipper ver 
+
+phone script file 
+
+the document that accompani phone provid good instruct on 
+write script file to get phone to dial slip server other than 
+the univers of minnesota server for exampl here is a script 
+that i us to dial a cisco server at the univers that i attend 
+
+background to start a slip connect i dial our termin server 
+and login with a usernam and password after do so i start a slip 
+session with the follow command 
+follow by my password again 
+
+here then is the relev portion of the phonecmd script file 
+
+slip login script by ashok aiyar 
+last revis 
+procedur hostcwrulogin 
+timeout termin server is not 
+messag slip login script version 
+messag for slip server to 
+quiet on 
+expect 
+messag for user verif receiv from 
+messag your user name and 
+quiet off 
+expect 
+send 
+expect 
+privat 
+send 
+reject user name or password wa not 
+timeout server did not respond to your valid 
+expect 
+send 
+timeout server did not respond to slip 
+expect hostnam or 
+send 
+timeout server did not respond to 
+reject ip 
+expect 
+send 
+reject not 
+timeout 
+expect compress will match your 
+messag to cwru slip server 
+wait 
+endprocedur hostcwrulogin 
+
+
+procedur hostcwrulogout 
+noth special need to be done to logout 
+endprocedur hostcwrulogout 
+
+end of script file 
+
+
+how to us packet driver other than umslip with phone 
+
+the quick answer there is no wai below is a batch file 
+hack that i wrote to us phone with other packet driver in thi 
+exampl the packet driver is peter cslipper to us a 
+batch file like thi you must know the paramet with which you 
+plan to us the packet driver ie interrupt vector baud rate 
+port address and irq thi batch file requir umslipcom 
+cslipperex and termincom to be in the same directori 
+or in your path 
+
+all that the batch file doe is to let you dial the slip connect 
+us phone load the appropri packet driver hangup the 
+connect and unload the driver when you ar done 
+
+be cwruslipbat 
+off 
+rem thi batch file is an ugli hack of u of minn 
+rem await a version of cslipper that can directli interact 
+rem with phone 
+rem cwruslipbat file is us with phoneex to start a slip 
+rem connect on 
+rem last modifi ashok aiyar 
+
+off 
+cl 
+goto start 
+
+start 
+if goto help 
+if help goto help 
+if setup goto setup 
+if dial goto forc 
+if hangup goto forceh 
+if quit goto forceh 
+if help goto help 
+if setup goto setup 
+if dial goto forc 
+if quit goto forceh 
+goto bogu 
+goto unload 
+
+forceh 
+termin 
+umslip nul 
+phone forc hangup 
+goto unload 
+
+slipper 
+termin 
+rem the follow line must be chang to reflect the com port 
+rem irq baud rate and softwar interrupt 
+lh cpacketcslipp ether 
+goto end 
+
+forc 
+termin 
+umslip nul 
+phone forc dial 
+goto slipper 
+
+setup 
+termin 
+umslip nul 
+phone setup 
+goto help 
+
+unload 
+termin 
+goto end 
+
+bogu 
+echo is not a valid command 
+echo try for a list of valid command 
+echo 
+
+help 
+echo 
+echo case western reserv univers slip setup 
+echo us univ of minnesota phone 
+echo 
+echo cwruslip setup modem sett phone number usernam etc 
+echo 
+echo cwruslip dial dial and establish the slip connect 
+echo cwruslip quit hangup the phone and unload the driver 
+echo cwruslip help thi screen 
+echo 
+
+end 
+end cwruslipbat 
+
+where to get what 
+
+peter program ar archiv at ftputaseduau cslipper 
+and the trumpet set of program 
+
+winqvtnet is gener archiv at most window ftp site 
+includ ftpcicaindianaedu 
+
+ncsa telnet is archiv at ftpncsauiucedu 
+
+nupop is archiv at ftpacnsnwuedu 
+
+popmailpc slipdisk phone and pc gopher ar archiv at 
+boomboxmicroumnedu 
+
+end sliptxt 
+
+
+
+
+ashok aiyar mail 
+depart of biochemistri tel 
+cwru school of medicin cleveland ohio fax 

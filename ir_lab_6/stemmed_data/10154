@@ -1,0 +1,26 @@
+from jun cui 
+subject how to respond to wmlbuttondblclk 
+
+us objectwindow try to resond to the left button 
+doubl click messag wmlbuttondblclk in a combo box my code look like 
+
+class mycombobox public tcombobox 
+
+public 
+mycomboboxptwindowsobject apar int resourceid word atextlen 
+tcomboboxapar resourceid atextlen 
+virtual void wmlbuttondblclkrtmessag msg 
+
+
+void mycomboboxwmlbuttondblclkrtmessage msg 
+
+respond to the messag select the item in the list box 
+
+
+anyth wrong with my program ani help would be appreciat 
+
+jun 
+to talk to the lord with through mswindow 
+
+
+

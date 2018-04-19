@@ -1,0 +1,38 @@
+from thoma gamet 
+subject keyboard specif 
+
+to all hardwar and firmwar guru 
+
+my current home project is to build a huge paddl keyboard for a 
+physicalli handicapp rel of mine my goal is for thi keyboard 
+to look exactli like an at sytle keyboard to it host system 
+thi will be a highli endow keyboard with a littl pcl from z world 
+at it heart the onli thing i lack is detail inform on the 
+hardwar signal that the with window and do will be 
+expect my project is independ of window my hope is that some of 
+you fellow usersprogramm will recogn what i need and be 
+will to point me in the right direct 
+
+i have the winn l rosch hardwar bibl edit the hb give 
+most if not all of the inform i will need concern scan code 
+and even a wire diagram for the style connector i will need but it 
+leav a number of import question unansw 
+is it synchronou or asynchronou serial commun 
+guess synchronou sinc the host is provid a clock in either 
+event how is the data frame 
+is it halfduplex or truli on wai guess halfduplex 
+sinc the host can turn led on and off 
+ar there ani chipset avail for communicat with the 
+keyboard other than by cannibaliz a real keyboard 
+
+if anyone know of a book or articl or ani other written sourc of 
+inform on the abov pleas advis me at 
+whatev i do it must be safe for i cannot afford to replac the in 
+the event of a booboo 
+
+thank you for your time 
+dank fuer ihr zeit 
+
+thoma gamet 
+softwar engin 
+sri intern 

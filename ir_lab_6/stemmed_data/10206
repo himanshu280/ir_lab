@@ -1,0 +1,34 @@
+from puneet k gupta 
+subject wordbas visual basic macrostempl 
+
+
+i am work with visual basic for window 
+specif i am work on an applic that gener formatt report 
+sinc some of these report can be rather larg my first question is 
+
+is there a wai to increas the size of a list box or text box in 
+visual basicwindow beyond the limit 
+
+as i have not as yet be optimist come across a wai to get 
+around the abov problem i am work on the follow approach 
+
+i am try to creat my own defin templat in msword us the 
+wordbas macro so that i can open up word from visual basicvb and load 
+thi templat of mine which will work in the follow wai 
+
+it will first open myownini file creat in vb at the time when the 
+user select the kind of report he weant and read the section from the 
+ini file and jump to the appropri code in templat which will then 
+open and read a file pertain to the section it read from the ini file 
+
+when us the getprofilestr function in wordbas is there a wai 
+to specifychang the default ini file which is winini to myownini file 
+
+when us the file function in wordbas is there a wai to 
+read more than the at on time 
+
+
+ani help will be appreciat 
+
+
+

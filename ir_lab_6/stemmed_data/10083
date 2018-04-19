@@ -1,0 +1,54 @@
+from wayne long 
+subject observ floppi copi work under pgm mgr but not do shell 
+
+ha anyone observ thi if i copi a larg sai file a larg pkzip 
+file for instanc to my floppi drive under ms window via either 
+program manag or a do shell the file copi under the do shell 
+ha error wherea the file copi from within program manag doe not 
+
+the corrupt is detect by execut t after 
+both copi the file copi via the do shell alwai show corrupt 
+
+
+now the kicker 
+
+
+i have mani window open while do both do and window app 
+supposedli all app share the same time slice wherea the 
+do app get their own equal time slice unless overriden 
+
+
+so as an exampl i have app open multitask do session runn 
+and on executionexeclus do shell iconiz inact under thi 
+scenario cpu time is divid into two major slice on for all the window 
+app and on slice for the runn do app 
+
+when copi under window pgm mgr assum the other window and do task 
+ar essenti inact thu pgm mgr get sai of the window slice and 
+of the executionbackground do slice thu it get 
+or of the total avail cpu time 
+
+when copi in a do shell i activ the executeexclus mode do shell 
+no other do background task allow full screen under the window task 
+manag the cpu time avail to thi shell would be of the window slice 
+assumm inact window applic and of the do slice 
+or of the total avail cpu time 
+
+so why do i get copi error under do if it ha the greater amount of cpu 
+time is program manag work in a preemptiv mode dure the floppi 
+copi it must be 
+
+
+
+miscellan data runn window on top of do qemm rapidbiossi 
+mbyte smartdriv no delai write two ramdriv 
+logitech mous driver full motherboard ram 
+motherboard cach dx mhz 
+
+runn doseditcom tsr in the do shell 
+
+
+
+wayne long internet 
+william cannon drive west uucp cstexaseduoakhillriscwcl 
+austin texa phone fax 

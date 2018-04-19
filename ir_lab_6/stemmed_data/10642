@@ -1,0 +1,33 @@
+from bowden wise 
+subject deriv from class object with owl 
+
+i am try to defin my own class deriv from the object class so 
+that i mai insert them into a hashtabl a class provid by the 
+contain class librari 
+
+i have defin all of the pure virtual function of object but i 
+still get an error when i attempt to alloc a hashentri object 
+
+cannot creat instanc of abstract class hashentri 
+
+ha anyone deriv from class object befor what have i left out 
+here ar the virtual function that i defin from object 
+
+virtual classtype isa const return 
+virtual pchar nameofconst return 
+
+virtual hashvaluetyp hashvalu const return 
+note hwindow is defin in hashentri 
+
+virtual int isequ const object far obj const 
+return thi hashentri 
+
+virtual void printon rostream os const 
+
+os hwindow is void far hwindow 
+
+
+
+bowden wise 
+comput scienc dept renssela polytechnic inst troi ny 
+internet 

@@ -1,0 +1,53 @@
+from robertknichol 
+subject re permana swap file with do dbldisk 
+
+in articl jame dean barwick write 
+
+more on permen swap file 
+
+sure everyon who ha an uncompress part of their compress hard disk 
+ha seen the messag have select a swap file greater than the suggest 
+sizewindow will onli us the size suggesteddo you to creat thi 
+swap file or someth like that 
+
+well a friend of mine robert call microsoft and ask them what and why 
+what thei said is that window check the amount of free disk space and 
+divid that number by then it check for the largest contigu block 
+of free disk space window then suggest the smaller of the two number 
+
+thei also said that under absolut no circumstancesnonewil window 
+us a swap file larger than the suggest size what he 
+said 
+
+i call if thi is true why doe window report the memori is 
+avail to me if not go to us it 
+
+i think the support droid wa malfunct and confus the disk space 
+limit with the virtual address space limit as far as the disk is 
+concern you ar limit onli by the amount of contigu free space 
+the limit that caus the messag will onli us is the 
+amount of virtual address space that the virtual memori manag will 
+creat and thi is a function of the amount of free memori that you have 
+when window start 
+
+in the section of systemini you can specifi a paramet 
+
+
+
+the follow descript is from the window resourc kit 
+
+thi entri specifi the multipli what determin the amount of 
+linear address space the vmm will creat for the system which is 
+comput by round up the amount of avail physical memori to 
+the nearest mb and then multipli that valu by the valu 
+specifi for increas thi valu increas the 
+amount of avail linear address space caus the size of data 
+structur to increas thi also increas page activ 
+proportion and can slow down the system you can specifi a 
+valu between and the default is to chang thi entri 
+you must edit systemini 
+
+
+bob nichol 
+att bell laboratori 
+

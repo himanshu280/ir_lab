@@ -1,0 +1,68 @@
+from fred j mccall 
+subject re leak memori resourc in 
+
+in daniel mittleman write 
+
+thi mai be an faq if so pleas direct me to the known answer but i 
+am gett frustrat and look for help 
+
+i am runn win with ndw on a with meg of memori and a 
+meg perm swap file and am gett exceedingli frustrat that my 
+applic ar not give back system resourc when i close them 
+
+i am awar thi is a known what i am look for ar some 
+suggest of what i might do to mitig it 
+
+what softwar is the culprit win ndw my applic ar 
+some mode of win standard real enhanc better than other at 
+plugg thi leak 
+
+the applic that do thi unfortun even the applet 
+that ship with seem to have thi problem seen it in 
+solitair for exampl 
+
+ar their systemini switch i can set to help plug thi leak 
+
+none that i know of if an applic give back the 
+resourc thei ar lost and gone forev pend a restart of 
+window 
+
+do peopl know of patch or third parti softwar that help with 
+thi seem like increas or better manag system resourc is a 
+great market for a third parti memori compani like qemm 
+
+if the applic free up the memori and a lot of them 
+bugger all that ani other piec of softwar can do 
+about it 
+
+if i run progman instead of ndw will the leak subsid i wa 
+hope that ndw would have plugg thi but it seem no differ 
+than in how it deal with memori and resourc 
+
+no thi is a problem with the applic usual 
+
+when i am write vb code ar there thing i can do to make it less 
+like my code will eat resourc 
+
+there ar book written on thi on in gener just be sure to free 
+up everyth that you ask for befor you exit unfortun i 
+understand that vb will intern lose resourc for you so 
+no wai to avoid thi entir 
+
+ani other suggest that i know enough to ask for 
+specif 
+
+thank for your help as thi is a common problem and i have seen onli 
+a littl discuss of it on the net there ar probabl other who 
+would like to read answer so pleas publish here rather than send 
+me email 
+
+littl discuss becaus until ms manag 
+to come up with an os that will do garbag collect or someth on 
+the resourc pool 
+
+
+on perfect safeti is for peopl who have the ball to live 
+in the real mari shafer nasa am dryden 
+
+i speak for other and thei speak for me 

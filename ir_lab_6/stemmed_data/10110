@@ -1,0 +1,26 @@
+from 
+subject re where to put my swap file id or scsi 
+
+in articl write 
+
+i have a sx and i recent add a scsi drive to my system us an 
+adaptec non busmast control yesterdai i ran coretest to 
+find out drive perform and these ar the valu i got 
+
+seagat meg avg seek track to track 
+quantum meg scsi kbsec avg seek track to track 
+
+first off all ar these good result i know what typical valu 
+ar 
+
+those ar pretti typical i believ 
+
+what wonder now is the follow my swap file is current on the 
+id i could move it to the scsi which is faster but then i would not 
+be abl to us access which might actual make it slower so on 
+which drive should i put my swap file to get best result is there a swap 
+file speed test program out there 
+
+keep the swap file on the id access is worth a fair amount more 
+than 
+

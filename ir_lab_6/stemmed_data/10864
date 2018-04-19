@@ -1,0 +1,239 @@
+from jayasooriah 
+subject experi with do 
+
+i have been have troubl post thi articl from within tin for over 
+a week if you do get multipl copi my apolog 
+
+here is a challeng to microsoft or microsort support to defend the 
+pathet state of do as an upgrad distribut it is a long stori 
+but would make good read for those who ar interest in know the 
+potenti pitfal of to do that i have been abl to 
+notic after onli about a week of plai around with it 
+
+my envorin 
+
+
+ti travelm winsx ram disk 
+system bio version by texa instrument 
+vga bio v by cirru logic quadtel 
+advanc power manag batterypro v by texa instrument 
+smart drive cach paramet a b 
+window benchmark winbenchtm v by zd lab 
+
+after to do i could not understand why certain thing 
+becam so slow especi after i decid to try in the 
+process of find out why i discov some interest thing 
+
+
+disk perform with doubl space and smart drive 
+
+
+while most thing did not appear to slow down most of the time certain 
+applic appear to run veri much slower what wa interest is 
+that command like and were runn far too slowli to 
+consid them us by ani standard i suspect doubl space ds 
+and decid to measur it impact on my system us winbenchtm 
+
+the real disk winmark of for the origin system as shipp from 
+factori with do and windoww becam when to 
+do with ds thu there is an effect perform degrad of 
+more than percent which did not realli surpris me becaus i knew 
+that ds compress must cost someth 
+
+specif for short sequenti read up to byte ds actual 
+improv transfer rate by about becaus cpu be faster than 
+io more cpu cycle need for ds is more than compensat by save 
+in io cycle howev for all other case particularli larg 
+random write the transfer take up to three time as long 
+
+while the perform depend on the type of access ie random or 
+sequenti small or larg transfer unit on the averag base on 
+assumpt the disk slow down to half it speed 
+
+the test alon done in see winbench and with smartdrv 
+on do not sai much except that it help to put into those subject 
+statement like is no notic differ in or 
+even that will speed up disk access when you have a fast cpu and 
+slow disk 
+
+thi explain why some applic ran markedli slower but not why 
+and the latter especi too so long 
+
+
+doubl space and window 
+
+
+dblspace will not run at all from within window not even if you 
+want to onli to get inform not modifi anyth or for that 
+matter even check on it usag try in a do box 
+within window and you will see what i mean from the error messag you 
+get how narrow mind can a program get i wonder 
+
+ye thi inform can be obtain through the mstoolsdd addon to 
+file manag but thi dll doe not understand a compress 
+floppi us the do supplement util to creat a compress 
+floppi if you dont know how to 
+
+
+do defragment is incompat with ti apm 
+
+
+defragment seem to take too much time even so i wait 
+patient till it finish and then ran it again to just to confirm 
+thi confirm command for the drive should take 
+no more than second much faster on other defragment i have us 
+but it took minut 
+
+i discov that if i move the mous defragment check ran 
+faster the figur tick more rapidli it dawn on me that thi 
+had to do with batteri saver advanc power manag apm 
+modul which slow the clock down when it think that the cpu is idl 
+and it obvious thought ds defragment wa an idl process after 
+disabl the power saver thi oper took onli second 
+
+
+microsft programm think and gatewai nomad user ar idiot 
+
+
+in the readmetxt file you can find the the follow 
+
+runn microsoft backup with and gatewai nomad comput 
+
+to avoid a conflict between the turbo featur and microsoft backup 
+for window or msdo add a switch to the devic command in 
+your configsi that load the batterypro file or befor you 
+run microsoft backup type setpow at the command prompt 
+
+if you check manual on the option you will realis that it 
+mean all power save featur of your why would 
+anyone want to run a driver disabl as i have found out not onli 
+doe power manag interfer with microsoft backup as the 
+readmetxt claim but and and who know what 
+els ar crippl by the power saver 
+
+it is obviou that there is not such thing as apm specif if 
+there inde is such a thing then either microsoft programm or ti 
+programm dont know how to read these specif you dont have 
+to guess as to who ar the idiot 
+
+by the wai if you run the advanc power manag util powerex 
+in when you check the statu it sai 
+
+power manag statu 
+
+sett adv max 
+cpu idl of time 
+
+thi figur of seem to be the steadi state valu on my notebook 
+when i am runn noth window with onli program manag in 
+iconis form doe that mean that window take up of my cpu all 
+for itself and that i have at best onli left for us work is 
+such an overhead justifi whether or not window is an operat 
+system or just anoth user interfac in do alon it report 
+idl time look like window is a good exampl of busi wait type 
+of packag that i like my student to studi as the classic 
+exampl of our time 
+
+
+microsoft programm do not know batch programm 
+
+
+i like to structur my startup script and thu have the equival of 
+addpath statement like thi 
+
+set 
+
+set 
+
+set 
+
+set 
+
+set 
+
+even though the new do wa instal in the same directori as the old 
+on ie cdo do instal program modif each and everi 
+path statement and prepend cdo to it valu as a result my 
+result path ha so mani 
+
+if the instal program want to remov the old do path and add 
+the new do path clearli it ha to onli scan for the path statement 
+conta the old do directori and replac it by the new do path 
+even thi should onli be done if the new do is instal in a 
+directori differ from the old on be 
+
+instead the microsoft programm if you can call thi person on 
+decid to meddl everi path statement i had in the autoexec and 
+prepend do to the valu i wonder if microsoft is so despar that it 
+would not fire programm who ar incap of the thought process 
+
+i start a thread on thi when do came up and the microsoft 
+repres in singapor call me about thi poster in fact he 
+specif said hi us counterpart saw the poster and relai the 
+inform to him as he did not have access to internet 
+
+now that ha not chang on bit in fact if you have a path statement 
+with path alreadi in it is it not obviou that the thi statement 
+should not be touch for ani reason 
+
+as anoth exampl of the inabl of microsoft programm to 
+understand batch programm i had the mous driver invok as 
+
+set 
+set 
+loadhigh mousemousecom 
+
+guess what memmak did it replac the last statement with 
+
+lh cetcmousemousecom 
+
+why is it so difficult just to replac loadhigh with lh and it 
+paramet without touch the rest of the line i do not understand 
+
+
+do softwar qualiti 
+
+
+do is the onli operat system i know in which under normal usag 
+you end up creat a file that you cannot get rid of us of the 
+command that come with it 
+
+i am deliber be cryptic about thi i challeng microsoft to 
+us all it programm to catch thi bug and publish it if thei dont 
+within a week i will post how you can creat thi file 
+
+sure if i can pick thi bug without even look for it after us a 
+particular command onli twice i am sure two dozen microsoft idiot 
+programm randomli bang on their keyboard over a week could find 
+it that is what i wa told how microsoft the of 
+their product 
+
+i think it is funni that microsoft ha found wai to 
+when it is accept in the industri that qualiti cannot be test but 
+can onli be built into the product no wonder thei cannot provid ani 
+form of guarante on their product not even a decent list of bug 
+that will prevent score of user from destroi their disk beyond 
+repair 
+
+also if you run often enough repeatedli when the disk 
+is fulli defrag you mai get error that wa creat by the 
+defragment i got my iosi file size error and it got truncat 
+when i did the chkdsk thi happend onli after five success 
+defragment efforst after the first on supposedli did it job and 
+with no new file creation sinc 
+
+microsft dont you dare repli to thi poster on the network until you 
+admit that your ds ha bug and ar will to let us know what we 
+should watch out for if we have alreadi us ds 
+
+jaya 
+
+
+dr jayasooriah cse cse unsw sign in a pari hotel 
+po box kensington nsw 
+telfax sport jacket mai be worn to dinner 
+internet but not 
+dr jayasooriah cse cse unsw sign in a norwegian cocktail loung 
+po box kensington nsw ar request 
+telfax not to have children 
+internet in the 

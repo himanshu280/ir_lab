@@ -1,0 +1,558 @@
+from chihkeng chen 
+subject control system analysi packagecosypak mathematica 
+
+
+
+announc 
+
+cosypak 
+
+a symbolic control system analysi packag 
+
+version 
+
+no user fee releas 
+
+for 
+
+mathematica version or higher 
+
+
+
+introduct 
+
+cosypak is set of packag and notebook for classic control and 
+some modern state space control analysi and design method the 
+notebook in cosypak follow a typical engin cours 
+taught at mani univers around the world for the juniorsenior 
+level undergradu there is no fee to us cosypak but certain 
+respons ar expect of the user see copyright notic in the 
+readm file includ below for starter email fax mail post 
+the registr form includ in the readm file 
+
+cosypak is avail via from 
+
+mishnaesyscwruedu internet no 
+
+in the pub directori 
+
+ps a typical ftp session in unix is given after the readm file 
+
+
+futur releas 
+
+if you would like to receiv updat and newer version of 
+cosypak pleas send emailfaxmail to the address 
+below in addit your comment and suggest ar 
+appreciat and ar invalu to us we will do our best 
+to fix ani report bug howev we cannot fix those 
+bug that have not been report to us and those we do not 
+know of we would veri much appreci you take a few 
+minut to commun to us via email us mail 
+telephon fax thi will help us to releas bugfre 
+version in the futur comment ar welcom 
+
+n sreenath 
+system engin depart 
+case school of engin 
+case western reserv univers 
+
+
+email 
+
+us mail 
+
+prof n sreenath tel 
+system engg crawford hall fax 
+case western reserv univ 
+cleveland oh 
+
+begin readm file 
+
+
+
+
+no user fee releas 
+
+cosypak 
+
+a symbolic control system analysi packag 
+
+version 
+
+for 
+
+mathematica version or higher 
+
+by 
+
+ckchen n sreenath 
+
+system engin 
+case school of engin 
+case western reserv univers 
+cleveland oh 
+email 
+
+copyright 
+copyright copyright by c k chen and n sreenath case 
+western reserv univers 
+
+permiss to us copi modifi and distribut thi softwar and 
+it document for ani purpos and without fee is herebi grant 
+provid that the abov copyright notic appear in support 
+document and the name of the case western reserv univers 
+case school of engin not be us in advertis or public 
+pertain to distribut of the softwar without specif without 
+prior permiss case western reserv univers make no 
+represent about the suitabl of thi softwar for ani 
+purpos it is provid with out express or impli warranti 
+
+acknowledg 
+
+support from cwru inform and network servic dr rai neff 
+case alumni associ the lilli foundat and the system 
+engin depart of case western reserv univers is 
+gratefulli acknowledg special thank to brian evan of georgia tech 
+for all the help 
+
+ftp 
+
+cosypak is avail by anonym from 
+mishnaesyscwruedu internet no a sampl ftp session 
+is given at the end of thi file 
+
+
+
+chang in version updat from to 
+
+in thi version we have revis cosypak to take advantag of 
+the more robust signal process function avail in mathematica 
+sinc mathematica provid a better and work 
+laplacetransform and inverselaplacetransform function than 
+mathematica did we adopt them thi ha made cosypak 
+smaller thu brian signal process packag that support 
+the laplacetransform and inverselaplacetransform function in the 
+cosypak ar no longer need directli by cosypak for 
+power user who us signal process we still recommend the us of the veri 
+fine brian evan packag on signal process avail at 
+the anonym ftp site gausseedspgatechedu or ip on 
+the downsid the disadvantag of thi updat 
+can be that mathematica requir more runtim resourc than it 
+previou version 
+
+
+
+for mathematica user 
+
+we have includ the laplacetransform packag from mathematica in 
+the directori pleas move all file and directori under into 
+the calculu directori under mathematica packag directori 
+
+
+
+introduct 
+
+thi is an unsupport releas of cosypak a control system 
+analysi packag for symbolic control system analysi us 
+mathematica classic control system analysi and design method and some 
+modern control system method have been implement in thi packag 
+
+thi packag and the attend notebook were develop on a 
+next tm comput a unix base workstat thei have been 
+us as a supplementari teach aid along with standard control 
+engin text ogata phillip and harbor for 
+undergradu cours in engin taught at the system 
+engin depart of cwru in addit to the next thei have 
+also been test successfulli on appl macintosh comput tm and 
+ibm tm runn ms windowstm we would be veri much interest 
+to hear from you if you or anybodi you know us thi softwar on 
+platform not mention abov ibm user howev will have to 
+evalu the notebook first to visual the graphic 
+
+onc instal see below for instruct thi collect of 
+mathematica packag can be load by ani user bundl with the 
+packag ar mani notebook which demonstr 
+the function of these packag the notebook follow a plan of 
+mani fine standard undergradu control engin text book 
+list in the refer exampl us in these notebook have 
+been collect from the variou refer given at the end of thi 
+file the content of the notebook in the directori ar 
+given below 
+
+begin content 
+
+notebook file name 
+chapter introduct to control system 
+
+section 
+analyt 
+pole and zero 
+signal 
+forward laplac transform 
+invers laplac transform 
+differenti equat with zerovalu initi condit 
+differenti equat with initi condit 
+
+
+
+notebook file name 
+chapter mathemat model of dynamic system 
+
+section 
+od to state space 
+linear of a nonlinear system of equat 
+state space to transfer function 
+
+
+
+notebook file name 
+chapter transientrespons analysi 
+chapter split into three sub notebook becaus of file 
+size 
+
+notebook file name 
+
+section 
+time respons analysi 
+first order system 
+second order system 
+third order and higher order system 
+
+notebook file name 
+
+section 
+first order system step respons vs time const 
+
+
+notebook file name 
+
+section 
+second order system step respons vs damp ratio 
+
+
+
+
+notebook file name 
+chapter steadystate respons 
+
+section 
+stabil 
+steadystate error analysi 
+
+
+
+notebook file name 
+chapter rootlocu analysi 
+
+
+
+notebook file name 
+chapter frequencyrespons analysi 
+
+section 
+bode plot analysi 
+magnitud vs phase plot nichol plot 
+polar plot 
+nyquist plot 
+combin exampl 
+
+
+
+notebook file name 
+chapter state space method 
+
+section 
+introduct 
+state transit matrix 
+control 
+observ 
+output control 
+pole placement design 
+observ design 
+time respons us state space method 
+
+
+end notebook content 
+
+
+compress file 
+
+the file that contain a complet set of the cosypak 
+packag and notebook for mathematica ar 
+
+compress tar file for unix system 
+
+compress sit file for macintosh 
+system and encod by binhex 
+format requir the sharewar 
+stuffit file v or higher 
+
+zip file for the ibm pc runn msdo 
+
+onc expand the mathematica file can also be us on 
+macintosh ibm pc unix system also 
+
+
+instal of cosypak 
+
+o in unix command line type the follow command 
+
+zcat tar xvf 
+
+o in macintosh open the sithqx file us the sharewar 
+stuffit v or higher 
+
+o in ibm command line type the follow command 
+
+pkunzip o d 
+
+note thi zip file wa zipp by zip util you must us 
+pkunzip version or higher to unzip it ibm mai limit the 
+directori name charact to eight in that event type o d 
+cosypakzip you can also unzip the file on ani 
+unix machin if you have unzip util on it 
+
+
+uncompress and untarr or unzipp 
+will creat a directori call 
+
+onc the file ar expand you should see a singl directori 
+contain the follow three file four 
+subdirectori and their content 
+
+subdirectori in 
+cosypak contain control tool box packag 
+manual cosypak manual in ps rtf txt and wn format 
+cosynote contain notebook 
+contain laplac transform packag from mathematica 
+for mathematica user 
+
+file in directori 
+
+
+file in directori 
+
+
+
+
+
+
+
+
+
+
+file in directori 
+laplacetransformm diracdeltam 
+subdirectori in common 
+file in directori supportm 
+
+import 
+
+the notebook exampl filesma file will be under the 
+directori to us the notebook move the directori to 
+a 
+directori that mathematica can recogn 
+
+locallibrarymathematicapackag on a unix machin 
+myharddiskmathematicapackage on an appl macintosh 
+cwinmathpackag on an ibm pc 
+
+at the beginn of the cell of each notebook 
+in directori we list the exampl about how to make 
+mathematica identifi the directori 
+
+initi of path 
+
+exampl for a unix machin default 
+
+
+
+
+
+exampl for an appl macintosh 
+
+
+
+
+
+exampl for ibm pc 
+
+
+
+
+
+
+chang the pathnam accord to your machin by remov the 
+mathematica comment sign and befor and after 
+sett 
+
+thi command make mathematica recogn the directori 
+
+locallibrarymathematicapackag on a unix machin 
+myharddiskmathematicapackage on a appl macintosh 
+cwinmathpackag on an ibm pc 
+
+
+mathematica user 
+
+we includ the laplacetransform packag from mathematica in 
+the directori pleas move all file and directori under 
+into the calculu directori under mathematica packag directori 
+
+
+gett start 
+
+after instal start mathematica and open the notebook in 
+the directori all notebook load their own packag 
+navig in the notebook and enjoi ibm user howev will have to 
+evalu the notebook to visual the graphic 
+
+
+
+user respons 
+
+we request you to take a few minut and fill out the 
+inform below and mail it to us by email fax us mail thi 
+will help us to keep your abreast of the improv and releas new 
+version of cosypak suggest for improv ar welcom 
+
+cut here 
+
+your name 
+
+organ 
+
+titl 
+
+email 
+
+postal address 
+
+
+
+comment 
+
+suggest 
+
+
+
+
+
+
+cut here 
+
+mail thi inform to email fax us mail 
+
+internet 
+
+us mail 
+
+prof n sreenath tel 
+system engg crawford hall fax 
+case western reserv univ 
+cleveland oh 
+
+
+
+report bug 
+
+pleas report bug and leav comment to the address abov 
+ani suggest for improv and critic ar welcom 
+
+we will do our best to fix ani report bug howev we cannot 
+fix those bug that have not been report to us and those we do not 
+know of we would veri much appreci you take a few minut to 
+commun to us via email us mail telephon fax thi will 
+help us to releas bugfre version in the futur 
+
+
+
+
+disclaim and futur releas 
+
+thi softwar is the properti of the case western reserv 
+univers us thi softwar at your own risk we make no express or 
+impli warranti 
+
+the packag and the notebook can also be made to run under 
+mathematica version or lower with modif we do not 
+guarante the outcom 
+
+
+document 
+
+cosypak function ar index in the file in the 
+directori accord the chapter usag is illustrat in 
+notebook resid in directori if your comput doe 
+not support notebook find a macintosh comput and acquir mathread 
+which is a public domain notebook reader mathread will at least 
+allow you to perus notebook but you will not be abl to evalu 
+ani code fragment 
+
+
+refer 
+
+dorf r c control sixth edit addison 
+weslei new york 
+
+fortmann t e and hitz k l introduct to linear control 
+marcel dekker 
+
+franklin g f powel d j and emaminaeini a 
+control of dynamic second edit addison weslei new 
+york 
+
+kuo b c control sixth edit prentic hall 
+new jersei 
+
+ogata k control second edit prentic 
+
+hall new jersei 
+
+phillip c l and harbor r d control 
+second edit prentic hall new jersei 
+
+
+end readm file 
+
+typical session 
+
+
+ftp mishnaesyscwruedu 
+connect to mishna 
+mishna ftp server version next sun nov readi 
+
+name mishnaesyscwruedusre anonym 
+
+password 
+
+ftp cd pub 
+
+ftp binari 
+
+ftp ls 
+port command success 
+open ascii mode data connect for file list 
+
+
+index 
+readm 
+placeswmd 
+cosypakuntar 
+transfer complet 
+byte receiv in second kbytess 
+
+ftp get 
+port command success 
+open binari mode data connect for byte 
+transfer complet 
+local remot 
+byte receiv in second kbytess 
+
+ftp quit 
+goodbye 
+
+
+
+

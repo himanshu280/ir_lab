@@ -1,0 +1,69 @@
+from jerom schneider 
+subject re question about do extern join command 
+
+
+in articl the author write 
+i am sett up my dosunix box on a id and a scsi drive 
+and wa wonder about the us of the msdo join command i 
+like the wai it set thing up sinc i have to stick with the c 
+d e crap that do enforc i like how it would mimic mount 
+point of unix filesystem i have heard that there were problem 
+with us it or at least under older version of do pleas tell 
+
+i have been us the join command for mani year now mostli with good 
+success in duplicat unixstyl file mount you will hear lot of 
+peopl curs join becaus thei confus it with the do append command 
+a trueli gnarli hack but believ them you also will hear 
+peopl sai that microsoft recommend that you not us join but in 
+window workgroup resourc toolkit the follow appear 
+
+an msdo util work fine with window for workgroup if 
+you do not chang the state of the join drive dure a window for 
+workgroup session thi includ add or remov join drive 
+from within window for workgroup we recommend that you do not us 
+join when runn window setup or window for workgroup 
+
+within thi caveat join appear to be valid under window howev i 
+have found a coupl of applic that deal well with filesystem 
+that have been us join 
+
+in particular the worst offend is word for window it get veri 
+confus when you edit and then try to save a file on a join drive it 
+want to creat the save file as nnnnntmp in the current dir then 
+delet the old file and renam the nnnnntmp file to the doc file 
+
+unfortun wfw usual write the nnnnntmp file in some idiot 
+place other than the current directori often in the root dir of the 
+join filesystem but not alwai then after delet the origin 
+doc file it find the nnnnntmp file to renam it unless you 
+search your disk system the document is gone 
+
+i have also found subtl problem us the mk toolkit from a do box 
+when join filesystem ar present i us to join ctemp with a 
+ramdisk but mk sometim get confus when do an on the ctemp 
+dir and miss some file in the temp dir thi is difficult to 
+reproduc but it goe awai total when join is not us i think 
+thi is a window problem rather than sinc it work ok under raw 
+do 
+
+so i would suggest that you can us join but be awar that it mai not 
+be as robust you would like 
+
+it be real great to network drive ie z under the main 
+file tree rather than have all those darn drive letter unfortun 
+join let you do it there wa talk on the net about a simpl patch 
+to let join work on network drive but i rememb the sourc 
+
+too bad the join command is not better implement sinc it would 
+avoid us all those stupid drive letter i realiz that messdo wa 
+meant for casual even ignor user so all the drive in 
+on file tree might be confus but it look like ms is go to carri 
+thi over into window nt anoth os meant for casual even igor 
+user not with all old famili system baggag maybe ms need 
+a recoveri group so thei can get on with life 
+
+
+jerom jerri schneider domain 
+aspen technolog group uucp 
+po box ft collin co voic 
+

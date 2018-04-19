@@ -1,0 +1,66 @@
+from richard spitz 
+subject re help with winqvt 
+
+jeff h swartz write 
+
+when i us a name such as rosevcrosehulmanedu 
+initiat nameserv queri for 
+nameserv queri time out 
+when i us the ip number 
+local host or gatewai not respond 
+
+i know the nameserv is correct and the router is correct thei work 
+fine us ncsa telnetftp 
+
+thei ar work ok but your definit in qvtnetini and qvthostrc ar 
+incorrect see below 
+
+the doc said if you ar runn concurr packet softwar you need to 
+load pktmux doe thi appli to me 
+
+no i think so you ar us qvtnet and novel concurr 
+you thei us differ packet type so qvtnet tcpip and novel ipxspx 
+should be abl to coexist just fine pktmux is requir if you ar us 
+differ tcpippackag concurr 
+
+thi is the qvthostrc file 
+
+
+
+there is the first problem you specifi hostnam just ipaddress 
+your file should look like thi 
+
+name of your nameserv 
+name of your router 
+
+thi is the beginn of the winqvtini file 
+
+
+
+here you should onli specifi your hostnam without the domain part 
+
+
+
+instead us of your router as specifi in your qvthostrc 
+i know the releas note for sai that ip address should work also 
+but appar thei 
+
+
+
+here too you should us the hostnam of the nameserv instead of the 
+ip address 
+
+it work fine for me that wai although i could not specifi more than 
+on nameserv the relnot sai it should be possibl to specifi up to 
+three nameserv separat by comma but it work 
+
+hope it help 
+richard 
+
+
+
+dr richard spitz internet 
+edvgrupp anaesthesi tel 
+klinikum grosshadern fax 
+munich germani 
+

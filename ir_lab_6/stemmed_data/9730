@@ -1,0 +1,122 @@
+from gregg walter 
+subject mathcad swap file 
+
+repost and summariz for your inform or addit comment 
+
+thi is long 
+
+i have of memori on my mhz an intel math coprocessor and 
+a hard drive with free no compress i have been runn 
+mathcad under window in enhanc mode with a ram drive 
+smart drive and no swap file perman or temporari for 
+sever month 
+
+i am interest in the faster mathcad but i am concern about report 
+swap file requir and the legitimaci of claim about increas 
+speed 
+
+to user 
+
+will mathcad run without a swap file or insist that i us a swap file 
+
+so far in respons to a less detail descript of my setup or in 
+unrelat post the more inform answer on the net or by email 
+appear to be 
+
+by david a fuess 
+
+accord to mathsoft no mathcad us the swap file extens so as 
+not to overburden the physical resourc thei sai thi is actual a 
+featur a figur of wa indicat to me as a minimum but 
+you might try anywai 
+
+by bert tyler 
+
+not all that certain that mathcad is the culprit here 
+
+i have a with of main memori less for a ramdisk and 
+a bit for a do session that is open as part of the startup process 
+which i have been runn without ani swapfil when i instal the 
+subsystem from the march beta of the nt sdk the subsystem 
+itself demand the presenc of a swapfil the onli program 
+run to date is the version of freecel that came with that 
+subsystem 
+
+i gave window a small temporari swapfil leeri of file that must 
+remain in fix locat on my hard disk and all seem well 
+
+by brian c anderson 
+
+what is i upgrad to mathcad and it instal a directori for 
+under windowssystem dure the upgrad it told me that 
+wa requir 
+
+by steven v 
+
+mathcad make us of the librari probabl 
+heard about it is a window librari that provid 
+much of the window nt function no support for thread and 
+multitask and such but can be run under window 
+
+by thoma c rhyne 
+
+i also have mb of ram and inde mathcad insist on a perman 
+it would not run otherwis 
+
+by greg bishop 
+
+mathcad absolut requir ram with swap file or ram 
+with swap file it will give you a not enough memori error if the 
+swap file is less than it is a major resourc hog if you do not 
+load the symbolic processor or the smart math it take about of ram 
+real or virtual just to load again due to the librari 
+
+
+
+so it seem that in addit to the system requir shown on 
+advertis for that you need a swap file possibl as big as 
+look like i would just need an swap file and would need to choos or 
+can i between a faster perman swap file or a slower temporari swap file 
+
+appar a subsystem ship with mathcad how much disk space 
+doe thi requir 
+
+
+
+i also receiv these answer 
+
+by dale hampl 
+
+if got meg of ram why not configur as a ram disk for 
+mathcad do permit differ bootup configur 
+
+
+
+can mathcad be configur to us such a ram drive instead of a 
+swap file if not i see how us do for an altern bootup 
+would provid window with thi swap file some time back i rememb a 
+discuss about the issu of us a ram drive to support a swap file 
+but i thought thi involv slower system 
+
+i have do but for variou reason have not yet done a full instal 
+
+by the wai is a full instal of do requir to avail oneself of 
+the featur which file from the instal disk ar 
+requir 
+
+
+
+by wildstrom 
+
+presum you mean without a perman swap file if window need a 
+swap file it will upo and creat on if a perman on exist 
+perman is gener faster though i know why mathcad 
+be happi with either typever is and so should ani program conform 
+to the win specif 
+
+
+
+so far ha been enough ram to avoid the overhead of runn ani swap 
+file i have been runn mathcad under window without on 
+
+

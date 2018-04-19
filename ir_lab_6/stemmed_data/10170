@@ -1,0 +1,511 @@
+from ito takayuki 
+subject re what doe the bmp format mean 
+
+in articl 
+andrew l robert write 
+
+what exactli doe the window bitmap format look like i mean how is 
+the data store width height no of colour bitmap data i 
+find anyth in th user manual is there ani other refer materi 
+which would give me thi inform 
+
+from thoma kinsman 
+newsgroup composmswindowsprogrammermiscaltbinariespicturesutil 
+subject dibbmp creation guid as request 
+keyword dib bmp bitmap file format 
+messageid 
+date dec gmt 
+sender 
+organ precambiran electron rochest ny 
+line 
+xref cradletitech 
+
+
+
+
+
+
+
+
+guid to creation of dib imag 
+
+
+thoma b kinsman 
+
+precambrian electron 
+falstaff rd 
+rochest ny 
+
+copyright march 
+
+
+
+abstract 
+
+the format of imag creat for us by ms window 
+applic is document in the ms window 
+refer guid thi guid is intend as a clearifi some 
+word of the specif and to put forth a 
+recommend among the variou altern 
+
+pleas send updatescorrectionssuggest and revis to 
+me pleas thank me for write thi on my own time by 
+keep my name with the document thank you for your 
+respect 
+
+thi document copyright by thoma b kinsman 
+if desir a postscript version of thi document is 
+avail 
+
+thi inform is free you get more than what you pai for 
+sue me if wrong 
+
+
+overview 
+
+the dib imag file format is intend to be a independ 
+file format what microsoft mean by is unclear to 
+me four pixel resolut ar support bit bit bit and bit 
+pixel 
+
+these imag were intend for us on do ibm or littleendian system 
+if you ar creat them on anoth architectur you will have to byte 
+swap all short and long integ valu 
+
+by convent dib imag end in the extens thi is becaus 
+
+
+
+march 
+
+
+
+
+
+
+
+
+thei ar a superset of earlier imag consequ you 
+will sometim hear dib file referr to as file 
+
+sinc dib imag file ar a superset there ar three of dib 
+imag 
+o do dib imag these ar the recommend convent and the 
+form which i will describ how to creat thei ar intend for 
+applic runn under ms window in a do environ 
+o dib imag my understand is that these ar the flavor 
+of dib imag that were us by the present manag 
+o oldstyle bitmap imag 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+march 
+
+
+
+
+
+
+
+
+differ between flavor 
+
+the do dib imag consist of 
+a file header which identifi the file as a 
+dib file thi header also give the total size of the imag 
+file and the offset to the imag data 
+a imag header which specifi the imag 
+attribut 
+an option palett of color us by the imag if it exist 
+thi mai contain or entri each entri is a window 
+rgbquad structur 
+the imag data itself 
+
+
+the dib imag consist of 
+the same file header which identifi the file 
+as a dib file thi header also give the total size of the 
+imag file and the offset to the imag data 
+a imag header which specifi the imag 
+attribut 
+an option palett of color us by the imag again if thi 
+exist it mai contain or entri each entri is a 
+window rgbtripl structur 
+the imag data itself 
+
+
+the old style imag bitmap consist of 
+either a bitmapinfohead or a bitmapcorehead which header 
+type is determin by the first long integ dword valu 
+an option color palett thi palett mai be compos of 
+either window rgbquad structur if the header wa a 
+bitmapinfohead or window rgbtripl structur if the header 
+wa a bitmapcorehead 
+the imag data itself 
+
+
+creat dib imag file 
+
+creat a do dib imag file consist of sever straight forward step 
+the header need to be creat and then written to the file these header 
+structur ar defin in the ms includ file 
+palett inform need to be store for imag that ar not 
+imag the five gener step ar 
+fill in the bitmapfilehead and the bitmapinfohead 
+structur the basic imag inform 
+if the imag is a or an imag creat the 
+color palett of rgbquad 
+calculat the total file size and putt thi inform in 
+
+
+
+march 
+
+
+
+
+
+
+
+
+the field of the bitmapfilehead 
+calculat the offset to the imag data from the start of the 
+file and putt thi in the field of the 
+bitmapfilehead 
+write to the file the bitmapfilehead the bitmapinfohead 
+the color palett and the imag data in that order 
+
+the follow section describ structur in term of microsoft c type 
+defin keyword the follow tabl describ these keyword for those 
+not familiar with microsoft c 
+
+
+
+typedefin keyword in microsoft c 
+
+typedef mean 
+
+byte unsign charact 
+word two byte unsign integ 
+dword four byte unsign integ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+march 
+
+
+
+
+
+
+
+
+the bitmapfilehead 
+
+thi structur is defin in as 
+typedef struct tagbitmapfilehead 
+word 
+dword 
+word 
+word 
+dword 
+
+
+the field is the two ascii charact and thi serv 
+to identifi the file as a dib imag file on an intel byte order 
+machin ibm or a compat thi constant can be form in c as the 
+quantiti on an intel system 
+
+the field is the total size of the file for our purpos thi 
+field is equal to the size of the bitmapfilehead plu the size of the 
+bitmapinfohead plu the number of entri in the color palett time 
+the size of a rgbquad plu the number of byte of imag data if the 
+imag data is be written out in an uncompress form thi valu can be 
+calculat ahead of time otherwis thi field need to be fill in 
+later 
+
+both the and the field ar alwai set to 
+zero 
+
+the field is set to the offset to the start of the imag data 
+from the start of the file for our purpos thi field should be set 
+to the size of the bitmapfilehead plu the size of the 
+bitmapinfohead plu the number of entri in the color palett time 
+the size of a rgbquad thi work out becaus the imag data is written 
+write after the color palett if on exist 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+march 
+
+
+
+
+
+
+
+
+the bitmapinfohead 
+
+thi structur is defin in as 
+typedef struct 
+dword 
+dword 
+dword 
+word 
+word 
+dword 
+dword 
+dword 
+dword 
+dword 
+dword 
+
+
+the field is set to the size of the bitmapinfohead structur 
+itself when read the imag file thi valu is what is us to 
+determin that the imag contain a bitmapinfohead and not a 
+bitmapcorehead 
+
+the field is the width of the imag in imag pixel 
+
+the field is the height of the imag in imag line 
+
+the field should alwai be set to thi data is written out 
+as if there wa on color plane 
+
+the field is the bitdepth of the imag thi must be either 
+or depend on the bitdepth of the imag data 
+
+the field tell how the imag data is compress if it is 
+compress dib imag support two form of runlength encod 
+howev i have never seen ani imag which us it and know yet how 
+it work set thi field to zero long zero or to indic that the 
+data is not compress 
+
+all subsequ field of the bitmapinfohead structur mai be set to 
+zero a requir of the interprett softwar that it be abl to 
+comput these field as necessari from the previou inform 
+
+the field which you might want to explicitli specifi might be 
+for and imag thi field indic that not all of the 
+possibl color entri ar us and that the imag contain 
+color if you ar us onli color with an imag then you mai 
+onli want to save of the possibl palett entri gener set 
+thi field to zero 
+
+
+
+march 
+
+
+
+
+
+
+
+
+color palett 
+
+each entri of a color palett is a rgbquad structur the rgbquad 
+structur is defin in the includ file as 
+typedef struct tagrgbquad 
+byte 
+byte 
+byte 
+byte 
+
+the field is alwai zero for each color us the amount 
+of blue green and red ar fill into the structur and the structur is 
+written to the file a valu of zero in the or 
+field indic that that particular compon doe not 
+contribut to the color composit a valu of in ani of these 
+field indic that the compon contribut fulli to the color 
+composit 
+
+
+
+imag data 
+
+there ar three surpris about the order of imag data in dib imag 
+file the creator of thi format wa determin to be creativ and 
+certainli wa 
+
+within the imag data each line written out is padd to the next four 
+byte quantiti so if you had an imag which wa onli on pixel 
+wide you still have to write out four byte for everi imag line the 
+number of byte per line can be calculat as 
+
+bytesperline widthinpix bitdepth 
+
+or in term of the field of the bitmapinfohead structur 
+
+bytesperline biwidth bibitcount 
+
+
+when write out your imag data you must write it out bottom line first 
+the bottom line of the imag as you would look at it on the screen is the 
+first line of imag data in the file 
+
+for and imag inform is written as you would 
+expect on bit imag ar padd eight pixel to a byte four bit 
+imag ar padd two pixel to a byte eight bit imag ar written on 
+pixel per byte twentyfour bit imag ar written three byte per pixel 
+howev for imag the inform must be written out in the 
+order blue green red while most imag file format write data out in 
+
+
+
+march 
+
+
+
+
+
+
+
+
+an order a dib imag file write the data out in an 
+order 
+
+summari 
+
+thi should provid enough inform to creat dib imag from 
+applic such as scanner or for imag export routin if you 
+find out ani more about dib imag pleas pass the inform on to me 
+so that i can modifi thi document accordingli 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+march 
+
+
+
+thoma b kinsman rochest ny 
+random kind and senseless act of anon 
+
+
+ito takayuki 
+senior depart of infom scienc 
+faculti of scienc univers of tokyo japan 

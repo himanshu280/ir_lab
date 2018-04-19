@@ -1,0 +1,31 @@
+from michael panayiotaki 
+subject re leak memori resourc in 
+
+in articl iriemon write 
+
+daniel mittleman write 
+i am runn win with ndw on a with meg of memori and a 
+meg perm swap file and am gett exceedingli frustrat that my 
+applic ar not give back system resourc when i close them 
+
+notic thi also the wai it wa explain to me is that window 
+doe not clear the upper memori block after a program is done anyone 
+out there know if thi is why 
+
+
+there wa a post about someth similar a while back it seem window 
+doe not take it upon itself to free up ani sy resourc an 
+applllic is us when that applic is done that job is left 
+entir to the applic that is the applic ha to clean up 
+after itself when it quit 
+
+anyone out there know if there is a util for window which will 
+clean up sy resourc when an applic quit motherzip 
+
+peac 
+mickei 
+
+pe michael panayiotaki 
+ac uunetseasgwuedulourai 
+how do make a mswindow grp file reflect a hd directori 
+i alwai right but never been 

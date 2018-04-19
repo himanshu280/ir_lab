@@ -1,0 +1,33 @@
+from robertknichol 
+subject re truetype font that displai but do not print 
+
+in articl avinash chopd write 
+i just instal a new truetype font under mswindow 
+but though all the applic displai the font correctli on the 
+screen quit a few of them fail to print out the document correctli 
+on a laserjet nonpostscript printer 
+
+but when i us the window accessori write the printer print squar 
+box in place of the charact of the new font yet write doe 
+displai the font correctli on the screen 
+
+thi is a common problem with highli complex truetype font microsoft 
+admit to a problem with older version of the postscript printer driver 
+but found it to be pretti gener 
+
+you can get around the problem by adjust the paramet outlinethreshold 
+in the section of winini thi entri specifi the number of 
+pelsperem at which window will render truetype font as outlin font 
+instead of as bitmap font the default is gener been abl 
+to get font to work by sett depend on your 
+printer resolut and the point size you ar us you mai need a 
+differ valu 
+
+the window resourc kit warn against go abov presum that 
+might caus font to print as squar box or someth not 
+smile 
+
+
+bob nichol 
+att bell laboratori 
+

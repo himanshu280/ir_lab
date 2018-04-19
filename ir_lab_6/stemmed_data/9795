@@ -1,0 +1,31 @@
+from jun cui 
+subject how to hold the control to a window object 
+
+hope i am in the right group us objectwindow version 
+try to get some date process in a window object howev when invok 
+the window object the call program give up the control to the window 
+object and keep execut the next statement the sourc code mai look 
+like the follow 
+
+class mywindow public twindow 
+
+
+
+
+void mycallingprog could the call program be a c function 
+
+mywindow 
+mywinobj new 
+
+
+
+next i want the program to wait here until mywinobj is close 
+so that i can get some data back from mywinobj 
+i specifi the window style to be wspopupwindow 
+help is there ani other wai to execut the window object 
+so that the call program give up the control 
+ani help would be appreciat thank jun 
+to talk to the lord with through mswindow 
+
+
+

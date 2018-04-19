@@ -1,0 +1,50 @@
+from jan van loenen 
+subject re diamond win mous cursor 
+
+don ab lindbergh write 
+
+in articl don ab lindbergh write 
+
+anybodi seen mous cursor distort runn the diamond driver 
+sorri know the version of the driver no indic in the menu but a recent 
+deliv gatewai system am go to try the latest driver from diamond bb but wonder 
+if anyone els had seen thi 
+
+as a followup thi is a machin he ha the latest driver 
+it onli happen us the driver sometim it take a minut 
+or so for the cursor to wig out but it eventu doe in thi mode i 
+susect someth is stepp on memori the video card want i exclud 
+in the line and in systemini the problem persist 
+perhap it is someth specif to the gatewai machin or compon 
+it is a eisa bu with an ultrastor control ah well 
+i wa hope thi wa some kind of or somebodi had seen it 
+befor perhap a call to gatewai is in order but i do find folk here 
+usual ar far more in the know 
+
+i have had sever problem with the card 
+applic crash when move the mous vga mode fix by remov 
+the line from configsi the default valu 
+doe just fine 
+random white pixel all over the screen when move the mous in a 
+color graphic mode the hardwar cursor mode fix by turn 
+off the hardwar scroll befor enter the graphic 
+mode thi also fix the problem of the window do box under window 
+with the hardwar scroll enabl applic write garbag outsid the 
+window 
+the screensav do not remov the cursor in color mode hardwar 
+cursor i know if thi is a window problem or a driver problem 
+clearli there should be two type of cursor remov function a remov 
+fordraw which can be ignor for hardwar cursor and a remov 
+uncondition do other card with hardwar cursor have the same problem 
+the vesa driver doe not support the truecolor mode univers 
+vesa driver do not run at all 
+
+
+disclaim unless otherwis state the abov comment ar entir my own 
+
+
+jan van loenen 
+digit equip corpor 
+
+
+

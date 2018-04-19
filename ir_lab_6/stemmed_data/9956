@@ -1,0 +1,387 @@
+from john bongiovanni 
+subject summari borlandmicrosoft databas c librari 
+
+well amaz at how success thi exercis wa i receiv 
+respons and request for summari thank to everyon who made it 
+possibl 
+
+on my own i wa abl to find out about codebas accsi and qe codebas 
+and accsi ar c librari without sql qe is a window applic 
+that can be communicat through window dde call where you send a sql 
+string and receiv the result 
+
+most peopl wrote to tell me about the paradox engin from borland other 
+product mention were odbc accsi quadbas codebas 
+rbase and qe onli odbc quadbas rbase and qe have sql 
+
+for myself i decid on codebas mostli becaus it ha an ansi c 
+portabl version that run under do unix etc and includ the 
+sourc code and portabl is import in my applic it work 
+with dbase foxpro or clipper file 
+
+howev i feel that odbc look veri promis 
+mostli a formalis of build and submitt sql queri and 
+formatt queri result as the respons sai avail via ftp 
+except effect unusu without two manual 
+the and the sdk moreov 
+odbc actual interpret sql and lias with databas 
+up to driver that should be provid by databas manufactur also 
+window onli actual an extens to the window sdk 
+nevertheless a start at a sql interfac standard and should 
+make life interest in the futur 
+
+my origin post follow by the respons separat by 
+a line of asterisk 
+
+doe anyone know if borland or microsoft have librari for access 
+their respect databas paradox foxpro from within c program 
+realli like to be abl to build a sql queri string and pass it 
+to a function which return the queri result in some format fail 
+that ani other access would still be better than noth 
+
+also like to hear of third parti librari for do the same thing 
+
+if other peopl ar interest prepar a summari of what 
+told and post it 
+
+thank to all 
+
+
+
+borland ha a product call paradox engin that doe just what you want 
+the current version is which is fulli compat with ack paradox 
+why the version ar differ i know pd engin wa 
+compat with pdox and it consist of a rather broad 
+librari of function for acces databas file from both pascal i think 
+turbo pascal and up and c i think either microsoft or borland 
+
+now read the box paradox engin databas 
+work with ani borland cc mocrosoft c or later 
+turbo c for window turbo pascal or later tp for window or 
+later for framework applic bc or later or ms cc it 
+doe have support for object useag 
+
+i had a real chanc to realli us it myself but it look fairli 
+complet plann to us it thi summer 
+rick 
+
+
+rick osterberg 
+harvard yard mail center cambridg ma usa 
+
+
+
+
+borland ha a product which is call paradox engin 
+i do not know about ms 
+
+the paradox engin i know veri well and it definiti 
+not a replac for sql but it will enabl you to 
+save and restor record ha lock et al supposedli 
+the paradox for window wa impement on top of it 
+
+
+
+
+charl parker 
+technic support 
+centerlin softwar inc 
+
+
+cyberspace 
+momma let yer children grow up to be cowboi 
+
+
+
+
+
+i know borland ha a librari of routin for access paradox from within 
+a c program thei recent came out with version thi work with both 
+borland and c compil 
+
+shailesh bhobe 
+
+
+
+
+
+
+ms ha put their odbc sdk into the public 
+big i believ mb but worth download over a 
+fast link look at ftpuunet in vendormicrosoftodbcsdk 
+
+also some compani ar start to provid sql i 
+just got on for rbase not exactli cheap at but it 
+allow program in c or vbasic under do or window to talk 
+to data base us sql function in your code 
+
+hth 
+
+walter knopf 
+fermilab 
+
+
+
+
+
+
+check out the odbc toolikt from microsoft it is avail on 
+ftpuunetvendormicrosoftodbcsdk thi is the wai that 
+chosen to access databas from all of our app 
+mj 
+
+
+ppppp sssssiiiiii specialist in mswindow and windowsnt develop 
+pp ppss ii call for inform about our ooaood tool ooaid 
+ppppp ssss ii michaeljon miller 
+pp ss ii profici solut inc 
+pp sssss iiiiii holm av so minneapoli mn 
+
+
+
+
+
+borland sell the which is a c languag interfac to 
+paradox dbase btriev an asci file thei also sell 
+which includ the engin plu a collect with sourc of c class 
+for us the engin 
+
+
+earl roethk 
+
+
+
+
+
+i actuali have paradox engin it is a librari of function larg model 
+for access the databas it seem to be work fine 
+but i never did try it thouroughli it cost 
+
+hope it will help you 
+
+
+from david lefebvr 
+
+
+
+borland provid a databas lib call paradox engin which can access 
+and us the databas file aswel as mani other thing 
+
+gari 
+
+
+
+gari bell 
+depart of robot and digit technolog 
+faculti of comput caulfield campu monash univers australia 
+
+
+
+paradox engin is the librari for paradox 
+
+
+artur babecki 
+
+
+
+
+borland sell the paradox engin which ha all the paradox call in it 
+it hardli sql though you can do search on kei field and on 
+indivu field but no comparison oper like 
+
+so it pretti pain in my opinion do do anyth besid simpl 
+retriev and insertsupd 
+
+current us it i have an eval copi and link it in to 
+some entri screen written 
+
+the engin librari add about to the size of the program but you can 
+load it as an overlai us vroom manag 
+
+now borland claim that later version of the engin will have sql support 
+but thei realli expect it till late in the year or even next year 
+thei ar try to get thrid parti to help out 
+
+if you have ani other question let me know 
+
+mike kamlet 
+
+
+
+
+
+ye borland sell their paradox engin separ it ha c c and 
+pascal interfac although the underli interfac is in well at 
+least for version of the engin which i have cost at egghead 
+thei now have version of the engin and a separ c class packag 
+for it 
+
+
+
+michael d kersenbrock 
+adc kentrox portland oregon 
+
+uunetkentroxmichaelk 
+
+
+
+
+us accsi for paradox new version is almost readi for paradox 
+to access paradox file from c it pretti good not sql 
+though have heard of borland paradox engin or some such which is 
+suppos to do likewis but not sure of what it is exactli 
+
+hope thi help good luck 
+chri 
+
+from christoph fernand 
+
+
+
+borland sell their engin a librari of function 
+for access paradox db file it come with librari for 
+ms c 
+bcc 
+turbo pascal v 
+and i believ it come with turbo pascalwin librari as well 
+the c librari come in both do and window flavor the win stuff 
+be 
+
+when i got it it also came with crystal report which 
+is a graphic report gener it allow you to creat a gener 
+form and us it within a compil program us pdox engin i 
+know if thei still offer it or what the current price is i paid 
+someth like for an upgrad from the earlier version though 
+
+hope thi help 
+
+david taylor 
+
+the command it is easier to chang the 
+internet specif to fit the program 
+also than viceversa 
+and author unknown but veri wise 
+
+
+
+
+
+if you want to do sql from within your program check out quadbas i 
+have their address oop ye i do 
+quadbas system inc 
+lucern dr 
+sunnyvale ca usa 
+
+phone voic fax 
+
+ask for the sqlwin demo disk 
+
+it look good to me i have a background in embedd sql in ingr thi 
+look real similar a littl expens but if you order the demo 
+and then just wait thei will probabl send you a special offer 
+probabl run about us good luck 
+
+best 
+tom delosh 
+
+from tom delosh 
+
+
+
+
+borland ha the paradox engin librari it ha librari for 
+both c and pascal to access paradox file under doswindow 
+but for paradox i believ have bui have the sql link 
+sinc pdox itself sql compliant us the engin 
+for over a year now and have been pretti satisfi with it 
+under do a real pig it tack on about to the size of 
+your program 
+
+tim ma 
+associ programm 
+univers of utah 
+email 
+
+
+
+i know about microsoft but borland sell the paradox engin for cc 
+pascal in on packag and if you want dbase compat file there is a 
+librari call codebas from sequit softwar that work with cc 
+
+from david j rai 
+
+
+
+
+
+us qe databas librari to do what you describ 
+a set of access through a common api to talk to most of the 
+major databas format us it to build an applic that 
+queri sever databas us sql queri all access us qe is 
+done us sql the packag is avail through microwai in melbourn i 
+believ it is produc by pioneer system in the us we have no 
+associ with microwai or pioneer system other than be satisfi 
+custom feel free to mail me for further inform 
+
+chri 
+programm for nsw nation park and wildlif servic 
+
+
+chri hutchinson box 
+research programm univers of new england 
+armidal nsw 
+
+
+
+
+
+paradox engin provid a complet set of c librari for 
+access paradox tabl howev it seem that it support 
+onli borlandturbo c and microsoft c when i tri to compil 
+the sampl applic with the waterloo watcom cc 
+compil it complain that the librari file llibcelib 
+is miss even though i am quit certain that the file is not 
+part of watcom c or the engin anybodi have ani success with 
+other c compil 
+
+
+
+
+
+
+
+current develop an app with engin 
+for it also come in pascal which ha recent gone to version 
+ie px engin is compat with paradox and downward compat 
+there ar inde c lib for fox access but i think of the 
+name offhand sure someon ha alreadi written you in that regard 
+i think i just saw an add for a fox lib in the user which 
+is a good place to look for thi type of packag in gener by the wai 
+been pai my due to learn a lot of the quirk of px eng over the 
+past year recommend it for a complex multius appbut 
+stai with it for like a bad marriag got too much time 
+invest in learn and workaround but if your interest is limit 
+to a simpl singleus interfac you want to build your own sql engin 
+i take it px engin will do the job easili it sound like 
+be bump into ani of the gotcha if you do write i mai 
+be abl to point you in the right direct 
+
+from raymond 
+
+
+
+borland ha a engin and databas framework which give you 
+a and assembl api to paradox databas thi is part of 
+object compon architectur thei have technic brief 
+on boca pdoxeng and other product of their 
+
+from jame d mcnamara 
+jame d mcnamara tasc 
+walker brook drive read ma 
+
+
+
+
+john bongiovanni system analyst orbit engin compani perth australia 
+
+opinion express ar my own and not those of my organis 

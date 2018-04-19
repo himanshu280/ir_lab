@@ -1,0 +1,31 @@
+from mike smith 
+subject and registerclasscreatewindow 
+
+
+hi all 
+
+i have a dll in which i regist a class and creat a window of that 
+class type both call requir a modul instanc handl hinstanc 
+
+book sai that it is best to us the modul instanc 
+handl of the call program not the modul instanc handl of the 
+dll page 
+
+i have two question 
+
+is there a wai to find out the modul instanc handl of a modul 
+
+what ar the possibl problem with us the instanc handl of 
+the dll 
+
+thank in advanc 
+mike 
+
+
+
+mike smith email 
+bull hn inform system inc phone 
+concord road fax 
+billerica ma usa 
+
+

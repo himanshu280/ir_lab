@@ -1,0 +1,26 @@
+from greg william 
+subject re mani peopl on on machin 
+
+in mark woodruff write 
+
+i have sever peopl share my machin and would like to set up separ 
+environ under window for each of them is there some wai of sett 
+thing up separ desktopsdirectori for each of them ideal 
+like total separ virtual machin be will to settl for 
+less and mai end up have batch file that copi ini file around 
+depend on who want to us the machin 
+
+you could us do to do thi partli you can set up differ configsi 
+and autoexecbat command for each user and thei just have to select their 
+menu option on bootup then you can have the autoexecbat copi the winini 
+and systemini file and chang directori for them when thei exit window 
+it can copi back gener ini file if you want 
+
+thi is the onli wai i can think of there mai be some program somewher 
+that allow you to do thi better though us do allow each person to 
+have a custom configsi and autoexecbat 
+
+greg william 
+georgia institut of technolog atlanta georgia 
+uucp 
+internet 

@@ -1,0 +1,61 @@
+from jame dean barwick 
+subject re permana swap file with do dbldisk 
+
+in composmswindowsmisc you write 
+
+while read through the do book it state that the window permana swap file will not work correctli when place on a compress drive to make thing compat 
+i remov my perman swap file befor start the upgrad howev when all the dust settl and i go into window it sai that the temporari swap file is right where it alwai wa in the window directori my question is how come the temporari swap file work ok with a compress drive and the perman on 
+
+you might want to look in window faq for thi on but here is my best 
+explan but i guarante that not wai off base 
+
+the permen swap file is readwritten to by window by talk 
+directli to the hard disk control card the control card must 
+us the protoc set up by western digit or someth like that 
+window creat a file call spartpar in your window directori that 
+point to that file it then us the physical inform about your 
+disk to index to inform in that file 
+
+compress disk ar actual disk these disk have differ 
+characterist than the actual physical disk furthermor the inform 
+on the compress disk must be uncompress befor it is us ie it must 
+go through the decompress program that trap disk read at the operat 
+system level or the bio level becaus of thi program window 
+cannot us direct method to read from the disk 
+
+a permen swap file is onli there to an area of the disk that 
+window can us and to block that space from do window would theoret 
+not even have to access the file from do to us that disk space i 
+know if it doe or it check for it somewher everytim you 
+boot window 
+
+a temporari swap file is just a normal do file that is access by window 
+via do and the bio if a disk compress program or other tsr is load 
+the file access must go through disk compressionand bio in 
+order to be access ie never us a temporari swap filenev 
+
+more on permen swap file 
+
+sure everyon who ha an uncompress part of their compress hard disk 
+ha seen the messag have select a swap file greater than the suggest 
+sizewindow will onli us the size suggesteddo you to creat thi 
+swap file or someth like that 
+
+well a friend of mine robert call microsoft and ask them what and why 
+what thei said is that window check the amount of free disk space and 
+divid that number by then it check for the largest contigu block 
+of free disk space window then suggest the smaller of the two number 
+
+thei also said that under absolut no circumstancesnonewil window 
+us a swap file larger than the suggest size what he 
+said 
+
+i call if thi is true why doe window report the memori is 
+avail to me if not go to us it 
+
+ani taker 
+
+jame 
+
+if thi get to the net will someon post it for me thank 
+
