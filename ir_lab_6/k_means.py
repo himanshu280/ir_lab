@@ -125,15 +125,13 @@ for key in doc_term_vector:
             document_frequency[term] / d_length
     doc_term_vector[key] = vector
 
+
 # k means using terms vectors as feature vectors
 
 
 def eu_dist(p_A, p_B):
-    # p_A is point A which is a vector
     dst = distance.euclidean(p_A, p_B)
     return dst
-
-# l_p is list of points
 
 
 def find_centroid(l_p):
@@ -144,26 +142,22 @@ def find_centroid(l_p):
     centroid_of_points = []
     for x in sum_points:
         centroid_of_points.append(1.0 * x / num_points)
-    print centroid_of_points
     return centroid_of_points
 
 
 def find_label(doc_vec, centroid_list):
-    # doc_vec is a point,
-    # centroid list is the list of all vectors of all centroids
-    # use eu_dist from above
-    # return the index of the centroid it is closet to
     min_dist = float("inf")
-    resulting_centroid = doc_vec
+    min_index = 0
     for i in range(len(centroid_list)):
-        if eu_dist(centroid_list[i], doc_vec) < min_dist:
-            resulting_centroid = centroid_list[i]
-    return resulting_centroid
+        temp_dist = eu_dist(centroid_list[i], doc_vec)
+        if temp_dist < min_dist:
+            min_dist = temp_dist
+            min_index = i
+    return min_index
 
 
 def check_condition(bins_1, bins_2):
     return bins_1 == bins_2
-    # check if this function is working
 
 
 # parameter initilization
@@ -194,18 +188,22 @@ for iter_count in range(iters):
     # find all centroids of bins
     for num_bin in bins_1:
         centroids.append(find_centroid(num_bin))
+
+    # lable each data point using min_dist(cluster_set,single_point)
+    for doc_id in set_of_docs:
+        doc_label = find_label(doc_term_vector[doc_id], centroids)
+        bins_2[doc_label].append(doc_id)
+
+    # termination condition
+    should_terminate = check_condition(bins_1, bins_2)
+
+    if should_terminate:
         break
-    break
+    else:
+        continue
 
-    # # lable each data point using min_dist(cluster_set,single_point)
-    # for doc_id in set_of_docs:
-    #     doc_label = find_label(doc_term_vector[doc_id], centroids)
-    #     bins_2[doc_label].append(doc_id)
-
-    # # termination condition
-    # should_terminate = check_condition(bins_1, bins_2)
-
-    # if should_terminate:
-    #     break
-    # else:
-    #     continue
+# printing clusters
+for i in range(20):
+    print("Cluster " + str(i + 1) + " >> ")
+    print(bins_1[i])
+    print(" ")
